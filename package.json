@@ -1,0 +1,23 @@
+{
+  "name": "stalk",
+  "version": "1.0.0",
+  "description": "TikTok account change monitor, historical tracker, and automatic screenshot tool",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js check",
+    "check": "node src/index.js check",
+    "report": "node src/index.js report",
+    "watch": "node src/index.js watch",
+    "login": "node src/index.js login",
+    "schedule": "node src/index.js schedule",
+    "schedule:remove": "node src/index.js schedule:remove",
+    "schedule:status": "node src/index.js schedule:status",
+    "push": "node src/index.js push",
+    "list": "node src/index.js list"
+  },
+  "dependencies": {
+    "playwright": "^1.50.0",
+    "playwright-core": "^1.63.0"
+  }
+}

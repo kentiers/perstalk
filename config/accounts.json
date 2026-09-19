@@ -1,0 +1,47 @@
+{
+  "accounts": [
+    {
+      "username": "cecil2507",
+      "url": "https://www.tiktok.com/@cecil2507",
+      "enabled": true
+    },
+    {
+      "username": "yukohanz",
+      "url": "https://www.tiktok.com/@yukohanz",
+      "enabled": true
+    },
+    {
+      "username": "yucallhanz_",
+      "url": "https://www.tiktok.com/@yucallhanz_",
+      "enabled": true
+    },
+    {
+      "username": "cecilelek2507",
+      "url": "https://www.tiktok.com/@cecilelek2507",
+      "enabled": true
+    },
+    {
+      "username": "cecil250725",
+      "url": "https://www.tiktok.com/@cecil250725",
+      "enabled": true
+    },
+    {
+      "username": "saaaaa_180",
+      "url": "https://www.tiktok.com/@saaaaa_180",
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "screenshotAlwaysOnInitial": true,
+    "screenshotOnChangeOnly": true,
+    "checkIntervalHours": 24,
+    "headless": true,
+    "chromePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "viewport": {
+      "width": 1366,
+      "height": 900
+    },
+    "timeoutMs": 45000,
+    "waitTimeAfterLoadMs": 4000
+  }
+}

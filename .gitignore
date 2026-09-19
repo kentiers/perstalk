@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+
+# browser session data & cache
+data/browser-session/
+
+# logs
+logs
+*.log
+
+# output
+dist
+out
