@@ -1,12 +1,12 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **19/09/26, 19.36**
+Terakhir diperiksa: **19/09/26, 19.37**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 10 | 68 | 0 | 0 | 19/9/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 10 | 67 | 0 | 0 | 19/9/2026 |
 | **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 10 | 1278 | 3 | 1776 | 2 | 19/9/2026 |
 | **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 2 | 19/9/2026 |
 | **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 19/9/2026 |
@@ -16,6 +16,14 @@ Terakhir diperiksa: **19/09/26, 19.36**
 ---
 
 ## Riwayat Kejadian
+
+### 19/09/26, 19.36 - @cecil2507 (PROFILE_CHANGED)
+
+- Jumlah Mengikuti (Following): "68" &rarr; "67" (-1)
+
+Berkas: [`screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png`](screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png)
+
+---
 
 ### 19/09/26, 19.09 - @saaaaa_180 (INITIAL_BASELINE)
 

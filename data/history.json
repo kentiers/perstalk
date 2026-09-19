@@ -315,5 +315,50 @@
       "lastBaselineScreenshot": "screenshots/@saaaaa_180/profile/2026-09-19_19-09-59_baseline.png"
     },
     "screenshot": "screenshots/@saaaaa_180/profile/2026-09-19_19-09-59_baseline.png"
+  },
+  {
+    "id": "evt_1789821420159_eluip",
+    "timestamp": "2026-09-19T12:36:59.430Z",
+    "username": "cecil2507",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Mengikuti (Following))",
+    "changes": [
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 68,
+        "newValue": 67,
+        "diff": -1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png",
+    "snapshot": {
+      "userId": "7686209623263429653",
+      "secUid": "MS4wLjABAAAA9CJz5qbn2y_YuUg3v8G5ev5Nz6QKbMIDm1V-YfytzvGd00ubZgq2cbgsjGjT4ykr",
+      "username": "cecil2507",
+      "nickname": "caca",
+      "bio": "seumur hidup Lo gabakal tenang, karma pasti bakal dateng",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/a9ccee6edf95e18d11457c11289ac026~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=1123dd8c&x-expires=1789992000&x-signature=qErqZ9W2eVbFLrPSAnMWaa5yMGY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 10,
+        "followingCount": 67,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 9
+      },
+      "uniqueIdModifyTime": 1789585291,
+      "nickNameModifyTime": 1789585172,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-19T12:36:59.430Z",
+      "lastChangeAt": "2026-09-19T12:36:59.430Z",
+      "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png"
+    }
   }
 ]
