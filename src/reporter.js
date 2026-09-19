@@ -71,7 +71,7 @@ export async function generateChangelog() {
   return CHANGELOG_FILE;
 }
 
-// Generate bold, generous, highly-legible sans-serif dashboard
+// Generate pure Pico CSS dashboard (100% semantic, robust, and responsive)
 export async function generateHtmlReport() {
   const history = await loadHistory();
   const latestState = await loadLatestState();
@@ -80,791 +80,349 @@ export async function generateHtmlReport() {
   const historyJson = JSON.stringify(history);
 
   const html = `<!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stalk - Pemantau Akun</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Pico CSS v2 (https://picocss.com) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <style>
     :root {
-      --bg: #0b0c11;
-      --panel: #13141c;
-      --panel-inner: #191a26;
-      --panel-hover: #212332;
-      --panel-selected: #282b3d;
-      --border: #2c2f42;
-      --border-subtle: #202230;
-      --text: #ffffff;
-      --text-muted: #cbd5e1;
-      --text-dim: #9499ad;
-      --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.16);
-      --positive: #34d399;
-      --positive-soft: rgba(52, 211, 153, 0.16);
-      --negative: #fb7185;
-      --warning: #fbbf24;
-      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --pico-border-radius: 0.6rem;
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font-sans);
-      min-height: 100dvh;
-      -webkit-font-smoothing: antialiased;
-      display: flex;
-      flex-direction: column;
+      padding-bottom: 4rem;
     }
-
-    /* Top Bar */
-    .topbar {
-      background: var(--panel);
-      border-bottom: 1px solid var(--border);
-      padding: 16px 36px;
+    /* Brand Header */
+    .brand-header {
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--pico-muted-border-color);
+      margin-bottom: 2rem;
+    }
+    .header-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      margin-bottom: 1rem;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 0.75rem;
     }
-    .topbar-left {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    .brand-title {
-      font-size: 22px;
+    .header-nav h1 {
+      margin-bottom: 0;
+      font-size: 1.75rem;
       font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #fff;
+      letter-spacing: -0.02em;
     }
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      color: var(--positive);
-      background: var(--positive-soft);
-      padding: 6px 14px;
-      border-radius: 8px;
+    .stats-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      background: var(--pico-card-background-color);
+      border: 1px solid var(--pico-card-border-color);
+      border-radius: var(--pico-border-radius);
+      padding: 0.85rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    @media (min-width: 768px) {
+      .stats-summary-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .stats-summary-grid div strong {
+      color: var(--pico-primary);
+      font-size: 1.2rem;
+      display: block;
+      margin-top: 0.2rem;
+    }
+
+    /* Target Selector Switcher */
+    .selector-container {
+      margin-bottom: 2rem;
+    }
+    .selector-container h3 {
+      font-size: 1.05rem;
       font-weight: 700;
-    }
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--positive);
-    }
-    .topbar-stats {
-      display: flex;
-      gap: 28px;
-      font-size: 15px;
-      color: var(--text-muted);
-      align-items: center;
-    }
-    .topbar-stats strong {
-      color: #fff;
-      font-weight: 800;
-      font-size: 16px;
-    }
-    .topbar-sync {
-      font-size: 14px;
-      color: var(--text-dim);
-      font-weight: 500;
-    }
-
-    /* Workspace Layout */
-    .layout-split {
-      display: flex;
-      flex: 1;
-      height: calc(100dvh - 66px);
-      overflow: hidden;
-    }
-
-    /* Left Sidebar: Target Roster */
-    .sidebar {
-      width: 370px;
-      background: var(--panel);
-      border-right: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      flex-shrink: 0;
-    }
-    .sidebar-header {
-      padding: 20px 24px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .sidebar-title {
-      font-size: 14.5px;
-      font-weight: 800;
-      color: #ffffff;
+      margin-bottom: 0.75rem;
+      color: var(--pico-muted-color);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-    .sidebar-count {
-      font-size: 14px;
-      color: var(--text-muted);
+    .target-btn-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+    }
+    @media (min-width: 768px) {
+      .target-btn-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+    }
+    .target-btn-grid button {
+      margin-bottom: 0;
       font-weight: 700;
-    }
-    .roster-list {
-      flex: 1;
-      overflow-y: auto;
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .roster-card {
-      padding: 16px 18px;
-      border-radius: 12px;
-      border: 1px solid transparent;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      transition: background 0.15s, border-color 0.15s;
-    }
-    .roster-card:hover {
-      background: var(--panel-hover);
-    }
-    .roster-card.selected {
-      background: var(--panel-selected);
-      border-color: #40445c;
-    }
-    .roster-avatar {
-      width: 56px;
-      height: 56px;
-      border-radius: 14px;
-      background: #000;
-      border: 1px solid var(--border);
-      flex-shrink: 0;
-      overflow: hidden;
-    }
-    .roster-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .roster-info {
-      flex: 1;
-      min-width: 0;
-    }
-    .roster-top-line {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    .roster-handle {
-      font-size: 16.5px;
-      font-weight: 800;
-      color: #fff;
+      font-size: 0.95rem;
+      padding: 0.75rem 0.8rem;
+      text-align: center;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .roster-story-badge {
-      font-size: 12.5px;
-      color: var(--accent);
-      background: var(--accent-soft);
-      padding: 3px 9px;
-      border-radius: 6px;
-      font-weight: 800;
-      flex-shrink: 0;
-    }
-    .roster-stats-line {
-      display: flex;
-      gap: 16px;
-      font-size: 14px;
-      color: var(--text-muted);
-      margin-top: 5px;
-      font-weight: 500;
-    }
-    .roster-stats-line strong {
-      color: #ffffff;
-      font-weight: 800;
-    }
 
-    /* Main Stage */
-    .stage {
-      flex: 1;
+    /* Profile Header - Mobile First Stacking */
+    .profile-card-header {
       display: flex;
       flex-direction: column;
-      overflow-y: auto;
-      background: var(--bg);
-    }
-    .stage-top {
-      padding: 36px 44px 30px;
-      border-bottom: 1px solid var(--border);
-      background: var(--panel);
-    }
-    .profile-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-      margin-bottom: 26px;
-      flex-wrap: wrap;
-    }
-    .profile-user-left {
-      display: flex;
-      gap: 22px;
-      align-items: center;
-    }
-    .profile-large-avatar {
-      width: 84px;
-      height: 84px;
-      border-radius: 20px;
-      background: #000;
-      border: 1px solid var(--border);
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    .profile-large-avatar img {
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+    }
+    @media (min-width: 768px) {
+      .profile-card-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .profile-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      width: 100%;
     }
     .profile-titles {
       min-width: 0;
+      flex: 1;
+      overflow: hidden;
     }
-    .profile-name {
-      font-size: 30px;
+    .profile-titles h2 {
+      margin-bottom: 0.15rem;
+      font-size: 1.85rem;
       font-weight: 800;
-      letter-spacing: -0.025em;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    .profile-link {
-      font-size: 16.5px;
-      color: var(--accent);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 4px;
+    .profile-titles a {
+      font-size: 1.05rem;
       font-weight: 700;
+      color: var(--pico-primary);
+      text-decoration: none;
     }
-    .profile-link:hover { text-decoration: underline; }
-    .profile-actions {
+    .profile-titles a:hover {
+      text-decoration: underline;
+    }
+    .profile-actions-right {
       display: flex;
-      gap: 14px;
       align-items: center;
+      gap: 0.75rem;
       flex-wrap: wrap;
+      width: 100%;
     }
-    .privacy-badge {
-      font-size: 14.5px;
-      font-weight: 700;
-      color: var(--text-muted);
-      background: var(--panel-inner);
-      padding: 10px 16px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
+    @media (min-width: 768px) {
+      .profile-actions-right {
+        width: auto;
+      }
     }
-    .btn-secondary {
-      background: #252837;
-      border: 1px solid #3e4259;
-      color: #fff;
-      font-size: 15px;
-      font-weight: 700;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: background 0.15s;
+    .profile-actions-right button, .profile-actions-right a {
+      margin-bottom: 0;
+      flex: 1;
     }
-    .btn-secondary:hover {
-      background: #31354a;
-      border-color: #515673;
+    @media (min-width: 768px) {
+      .profile-actions-right button, .profile-actions-right a {
+        flex: initial;
+      }
+    }
+    .profile-avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: var(--pico-border-radius);
+      object-fit: cover;
+      background: #000;
+      border: 2px solid var(--pico-muted-border-color);
+      flex-shrink: 0;
     }
 
-    /* Bold Bio Container */
-    .bio-panel {
-      background: var(--panel-inner);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 22px 28px;
-      font-size: 17.5px;
+    /* Bio quote */
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem 1.25rem;
+      font-size: 1.1rem;
       line-height: 1.6;
-      color: #ffffff;
-      font-weight: 500;
-      word-break: break-word;
-      margin-bottom: 26px;
-    }
-    .bio-panel.empty {
-      color: var(--text-dim);
-      font-style: italic;
     }
 
-    /* Metrics Row */
-    .metrics-row {
+    /* Metrics Grid */
+    .telemetry-row {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      margin-top: 1.5rem;
     }
-    .metric-card {
-      background: var(--panel-inner);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px 24px;
+    @media (min-width: 768px) {
+      .telemetry-row {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+      }
     }
-    .metric-card-label {
-      font-size: 14px;
-      color: #cbd5e1;
-      margin-bottom: 6px;
+    .telemetry-box {
+      text-align: center;
+      margin-bottom: 0;
+      padding: 1.25rem 0.75rem;
+    }
+    .telemetry-box p {
+      margin-bottom: 0.35rem;
+      font-size: 0.9rem;
       font-weight: 700;
-      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--pico-muted-color);
     }
-    .metric-card-value {
-      font-size: 42px;
+    .telemetry-box h3 {
+      margin-bottom: 0;
+      font-size: 2.5rem;
       font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #fff;
-    }
-
-    /* Stage Content */
-    .stage-content {
-      padding: 36px 44px;
-      display: grid;
-      grid-template-columns: 370px 1fr;
-      gap: 32px;
-    }
-
-    .sub-section {
-      display: flex;
-      flex-direction: column;
-      gap: 26px;
-    }
-    .content-box {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px;
-    }
-    .content-box-title {
-      font-size: 16px;
-      font-weight: 800;
-      color: #ffffff;
-      margin-bottom: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      color: var(--pico-color);
     }
 
     /* Story Vault Grid */
-    .stories-vault {
+    .story-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
     }
-    .story-card-item {
-      height: 145px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: #000;
+    .story-tile {
       position: relative;
-      cursor: pointer;
+      height: 150px;
+      border-radius: var(--pico-border-radius);
+      border: 1px solid var(--pico-muted-border-color);
       overflow: hidden;
-      transition: border-color 0.15s, transform 0.15s;
+      cursor: pointer;
+      background: #000;
     }
-    .story-card-item:hover {
-      border-color: var(--accent);
-      transform: scale(1.02);
-    }
-    .story-card-item img {
+    .story-tile img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
-    .story-type-label {
+    .story-tile mark {
       position: absolute;
-      bottom: 8px;
-      right: 8px;
-      font-size: 11.5px;
-      background: rgba(0, 0, 0, 0.88);
-      padding: 3px 8px;
-      border-radius: 5px;
-      color: #fff;
+      bottom: 6px;
+      right: 6px;
+      font-size: 0.75rem;
       font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
       text-transform: uppercase;
-    }
-    .empty-story-note {
-      font-size: 15px;
-      color: var(--text-muted);
-      padding: 36px 24px;
-      text-align: center;
-      border: 1px dashed var(--border);
-      border-radius: 12px;
-      line-height: 1.6;
-      font-weight: 500;
     }
 
     /* Snapshot Box */
-    .snapshot-thumb-wrapper {
-      width: 100%;
-      height: 190px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: #000;
+    .snapshot-container {
       position: relative;
+      height: 200px;
+      border-radius: var(--pico-border-radius);
+      border: 1px solid var(--pico-muted-border-color);
       overflow: hidden;
       cursor: pointer;
-      transition: border-color 0.15s;
+      background: #000;
+      margin-top: 1rem;
     }
-    .snapshot-thumb-wrapper:hover {
-      border-color: var(--accent);
-    }
-    .snapshot-thumb-wrapper img {
+    .snapshot-container img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: top;
       display: block;
     }
-    .snapshot-thumb-label {
+    .snapshot-container span {
       position: absolute;
-      bottom: 12px;
-      left: 12px;
-      background: rgba(0, 0, 0, 0.92);
-      font-size: 13.5px;
-      font-weight: 700;
-      padding: 5px 12px;
-      border-radius: 6px;
+      bottom: 8px;
+      left: 8px;
+      background: rgba(0, 0, 0, 0.85);
       color: #fff;
-    }
-
-    /* Table Container */
-    .target-history-box {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
-    }
-    .target-history-header {
-      padding: 20px 26px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .target-history-title {
-      font-size: 16px;
-      font-weight: 800;
-      color: #ffffff;
-    }
-    .table-scroll-wrap {
-      width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .data-table {
-      width: 100%;
-      min-width: 540px;
-      border-collapse: collapse;
-      font-size: 15.5px;
-    }
-    .data-table th {
-      background: var(--panel-inner);
-      font-size: 14.5px;
-      color: #ffffff;
-      padding: 16px 24px;
-      border-bottom: 1px solid var(--border);
-      font-weight: 800;
-      text-align: left;
-    }
-    .data-table td {
-      padding: 18px 24px;
-      border-bottom: 1px solid var(--border-subtle);
-      vertical-align: middle;
-      line-height: 1.6;
-      color: #ffffff;
-      font-weight: 500;
-    }
-    .data-table tr:last-child td { border-bottom: none; }
-    .data-table tr:hover td { background: var(--panel-hover); }
-
-    .tag-badge {
-      font-size: 13px;
-      padding: 5px 12px;
-      border-radius: 6px;
+      font-size: 0.85rem;
       font-weight: 700;
-      white-space: nowrap;
-      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
     }
-    .tag-badge.change { background: rgba(245, 158, 11, 0.22); color: var(--warning); }
-    .tag-badge.story { background: var(--accent-soft); color: var(--accent); }
-    .tag-badge.base { background: rgba(255, 255, 255, 0.12); color: #ffffff; }
 
-    .diff-item {
-      font-size: 15px;
-      margin-bottom: 4px;
-    }
-    .diff-label { color: #cbd5e1; font-weight: 700; }
-    .diff-old { color: var(--negative); text-decoration: line-through; margin: 0 6px; }
-    .diff-new { color: var(--positive); font-weight: 800; }
-    .diff-delta { color: var(--accent); font-size: 14px; font-weight: 800; margin-left: 6px; }
-
-    .media-thumb-btn {
-      width: 68px;
-      height: 48px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: #000;
-      overflow: hidden;
-      cursor: pointer;
-      display: inline-block;
-      transition: border-color 0.15s;
-    }
-    .media-thumb-btn:hover { border-color: var(--accent); }
-    .media-thumb-btn img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-    /* Modal */
-    #modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.94);
-      backdrop-filter: blur(14px);
-      z-index: 10000;
-      justify-content: center;
-      align-items: center;
-      padding: 28px;
-    }
-    #modal.active { display: flex; }
-    .modal-dialog {
-      max-width: 92vw;
-      max-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-    .modal-dialog img {
-      max-width: 90vw;
-      max-height: 80vh;
-      border-radius: 12px;
-      border: 1px solid var(--border);
+    /* Modal dialog */
+    dialog article img {
+      max-height: 75vh;
+      width: 100%;
       object-fit: contain;
-    }
-    .modal-bar {
-      margin-top: 16px;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      font-size: 15px;
-      font-weight: 700;
-      color: #fff;
-      align-items: center;
-    }
-    .modal-close-btn {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: rgba(30, 32, 45, 0.92);
-      border: 1px solid var(--border);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 20px;
-      z-index: 10001;
+      border-radius: var(--pico-border-radius);
+      margin: 1rem 0;
+      display: block;
     }
 
-    /* Responsive Mobile & Tablet Overrides */
-    @media (max-width: 1023px) {
-      body {
-        overflow-y: auto;
-      }
-      .topbar {
-        padding: 16px 20px;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-      }
-      .topbar-left {
-        justify-content: space-between;
-        width: 100%;
-      }
-      .topbar-stats {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        background: var(--panel-inner);
-        padding: 12px 14px;
-        border-radius: 10px;
-        font-size: 14px;
-        text-align: center;
-      }
-      .topbar-sync {
-        display: none;
-      }
-      .layout-split {
-        flex-direction: column;
-        height: auto;
-        overflow: visible;
-      }
-      /* Horizontal swipeable stories/target selector on mobile */
-      .sidebar {
-        width: 100%;
-        background: #0e0f16;
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-      }
-      .sidebar-header {
-        padding: 12px 20px;
-      }
-      .roster-list {
-        flex-direction: row;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding: 12px 16px 16px;
-        gap: 12px;
-      }
-      .roster-card {
-        flex-shrink: 0;
-        min-width: 145px;
-        height: 142px;
-        padding: 12px 16px;
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-        gap: 6px;
-      }
-      .roster-card.selected {
-        border-color: var(--accent);
-        background: #1c2233;
-      }
-      .roster-avatar {
-        width: 56px;
-        height: 56px;
-      }
-      .roster-info {
-        width: 100%;
-      }
-      .roster-top-line {
-        flex-direction: column;
-        gap: 4px;
-        min-height: 48px;
-        justify-content: center;
-      }
-      .roster-handle {
-        font-size: 15px;
-      }
-      .roster-stats-line {
-        justify-content: center;
-        gap: 8px;
-        font-size: 13px;
-        margin-top: 4px;
-      }
-
-      /* Stage Mobile Layout */
-      .stage {
-        overflow-y: visible;
-      }
-      .stage-top {
-        padding: 24px 20px;
-      }
-      .profile-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-      }
-      .profile-actions {
-        width: 100%;
-        justify-content: space-between;
-      }
-      .profile-actions .btn-secondary {
-        flex: 1;
-        justify-content: center;
-      }
-      .metrics-row {
+    @media (max-width: 768px) {
+      .telemetry-row {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 0.75rem;
       }
-      .metric-card {
-        padding: 16px 18px;
+      .telemetry-box h3 {
+        font-size: 2rem;
       }
-      .metric-card-value {
-        font-size: 32px;
+      .profile-titles h2 {
+        font-size: 1.6rem;
       }
-      .stage-content {
-        padding: 24px 20px;
-        grid-template-columns: 1fr;
-        gap: 24px;
+      .target-btn-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   </style>
 </head>
 <body>
-  <!-- Top Bar -->
-  <header class="topbar">
-    <div class="topbar-left">
-      <span class="brand-title">Stalk</span>
-      <span class="status-badge"><span class="status-dot"></span> <span id="target-count-badge">6 Target Dipantau</span></span>
+  <!-- Semantic Header -->
+  <header class="container brand-header">
+    <div class="header-nav">
+      <div>
+        <h1>Stalk</h1>
+        <small class="secondary">• 6 Target Dipantau</small>
+      </div>
+      <div>
+        <small class="secondary">Pembaruan: ${formatDate(new Date().toISOString())}</small>
+      </div>
     </div>
-    <div class="topbar-stats">
-      <span>Video: <strong id="sum-videos">0</strong></span>
-      <span>Pengikut: <strong id="sum-followers">0</strong></span>
-      <span>Story: <strong id="sum-stories" style="color:var(--accent)">0</strong></span>
-    </div>
-    <div class="topbar-sync">
-      <span>Terakhir dicek: ${formatDate(new Date().toISOString())}</span>
+    <div class="stats-summary-grid">
+      <div>Total Video: <strong id="sum-videos">0</strong></div>
+      <div>Total Pengikut: <strong id="sum-followers">0</strong></div>
+      <div>Story Aktif: <strong id="sum-stories">0</strong></div>
+      <div>Target Dipantau: <strong id="sum-targets">6</strong></div>
     </div>
   </header>
 
-  <!-- Split Workspace -->
-  <div class="layout-split">
-    <!-- Target Roster (Sidebar on Desktop, Horizontal Swipe on Mobile) -->
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <span class="sidebar-title">Daftar Akun</span>
-        <span class="sidebar-count" id="roster-total">6 Akun</span>
-      </div>
-      <div class="roster-list" id="roster-container"></div>
-    </aside>
+  <!-- Semantic Main Content -->
+  <main class="container">
+    <!-- Target Account Selector Grid -->
+    <section class="selector-container">
+      <h3>Pilih Akun Target</h3>
+      <div class="target-btn-grid" id="target-selector-grid"></div>
+    </section>
 
-    <!-- Right Inspector Stage -->
-    <main class="stage" id="stage-container"></main>
-  </div>
+    <!-- Target Dossier Stage -->
+    <section id="inspector-stage"></section>
+  </main>
 
-  <!-- Modal -->
-  <div id="modal" onclick="closeModal(event)">
-    <div class="modal-dialog">
-      <button class="modal-close-btn" onclick="closeModal(event)">&times;</button>
-      <img id="modal-image" src="" alt="Pratinjau Berkas">
-      <div class="modal-bar">
-        <span id="modal-caption">-</span>
-        <a id="modal-download" href="" download class="btn-secondary">Unduh Berkas</a>
-      </div>
-    </div>
-  </div>
+  <!-- Native HTML5 Dialog for Lightbox -->
+  <dialog id="modal">
+    <article>
+      <header>
+        <button aria-label="Close" rel="prev" onclick="closeModal()"></button>
+        <strong id="modal-caption">-</strong>
+      </header>
+      <img id="modal-image" src="" alt="Pratinjau">
+      <footer>
+        <a id="modal-download" role="button" download>Unduh Berkas</a>
+      </footer>
+    </article>
+  </dialog>
 
   <script>
     const accounts = ${accountsJson};
@@ -892,53 +450,37 @@ export async function generateHtmlReport() {
       document.getElementById('sum-videos').textContent = totalVids;
       document.getElementById('sum-followers').textContent = Number(totalFoll).toLocaleString('id-ID');
       document.getElementById('sum-stories').textContent = totalStories;
-      document.getElementById('target-count-badge').textContent = usernames.length + ' Target Dipantau';
-      document.getElementById('roster-total').textContent = usernames.length + ' Akun';
-
-      renderSidebar();
+      document.getElementById('sum-targets').textContent = usernames.length;
+      renderSelector();
       renderStage();
     }
 
-    function renderSidebar() {
-      const list = document.getElementById('roster-container');
-      list.innerHTML = '';
+    function renderSelector() {
+      const grid = document.getElementById('target-selector-grid');
+      grid.innerHTML = '';
 
       usernames.forEach(u => {
         const acc = accounts[u];
-        const stats = acc.stats || {};
         const stories = acc.activeStories || [];
         const isSelected = (u === selectedUser);
 
-        const card = document.createElement('div');
-        card.className = 'roster-card' + (isSelected ? ' selected' : '');
-        card.onclick = function() {
+        const btn = document.createElement('button');
+        btn.className = isSelected ? 'primary' : 'outline secondary';
+        const badge = stories.length > 0 ? ' (' + stories.length + 'S)' : '';
+        btn.textContent = '@' + u + badge;
+        btn.onclick = function() {
           selectedUser = u;
           renderApp();
         };
 
-        card.innerHTML = \`
-          <div class="roster-avatar">
-            <img src="\${acc.avatarUrl}" alt="\${u}" onerror="this.src='data:image/svg+xml,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 24 24\\' fill=\\'%23444\\'><circle cx=\\'12\\' cy=\\'8\\' r=\\'4\\'/><path d=\\'M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z\\'/></svg>'">
-          </div>
-          <div class="roster-info">
-            <div class="roster-top-line">
-              <span class="roster-handle">@\${u}</span>
-              \${stories.length > 0 ? \`<span class="roster-story-badge">\${stories.length} Story</span>\` : ''}
-            </div>
-            <div class="roster-stats-line">
-              <span>Video: <strong>\${stats.videoCount ?? 0}</strong></span>
-              <span>Pengikut: <strong>\${Number(stats.followerCount ?? 0).toLocaleString('id-ID')}</strong></span>
-            </div>
-          </div>
-        \`;
-        list.appendChild(card);
+        grid.appendChild(btn);
       });
     }
 
     function renderStage() {
-      const stage = document.getElementById('stage-container');
+      const stage = document.getElementById('inspector-stage');
       if (!selectedUser || !accounts[selectedUser]) {
-        stage.innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-dim);font-size:16px;">Pilih akun di daftar.</div>';
+        stage.innerHTML = '<article><p>Pilih akun target di atas.</p></article>';
         return;
       }
 
@@ -946,73 +488,61 @@ export async function generateHtmlReport() {
       const stats = acc.stats || {};
       const stories = acc.activeStories || [];
       const latestScreenshot = acc.lastChangeScreenshot || acc.lastBaselineScreenshot || '';
-
       const userEvents = historyData.filter(e => e.username === selectedUser);
 
-      // Stories Grid
+      // Stories Section
       let storiesHtml = '';
       if (stories.length > 0) {
         storiesHtml = \`
-          <div class="stories-vault">
+          <div class="story-grid">
             \${stories.map((s, idx) => \`
-              <div class="story-card-item" onclick="openModal('\${s.screenshot || s.mediaFile}', '@\${selectedUser} - Story \${idx+1}')" title="\${s.desc || 'Story'}">
+              <div class="story-tile" onclick="openModal('\${s.screenshot || s.mediaFile}', '@\${selectedUser} - Story \${idx+1}')">
                 <img src="\${s.mediaFile || s.screenshot}" alt="Story">
-                <span class="story-type-label">\${s.mediaType || 'media'}</span>
+                <mark>\${s.mediaType || 'media'}</mark>
               </div>
             \`).join('')}
           </div>
         \`;
       } else {
-        storiesHtml = '<div class="empty-story-note">Tidak ada story aktif dalam 24 jam terakhir</div>';
+        storiesHtml = '<p class="secondary" style="margin-top:1rem;"><small>Tidak ada story aktif dalam 24 jam terakhir.</small></p>';
       }
 
-      // History Rows
-      let rowsHtml = '';
+      // History Table
+      let tableRowsHtml = '';
       if (userEvents.length === 0) {
-        rowsHtml = '<tr><td colspan="4" style="text-align:center;color:var(--text-dim);padding:28px;font-size:15px;">Belum ada perubahan tercatat.</td></tr>';
+        tableRowsHtml = '<tr><td colspan="4" class="secondary">Belum ada perubahan tercatat.</td></tr>';
       } else {
         const rev = [...userEvents].reverse();
-        rowsHtml = rev.map(item => {
+        tableRowsHtml = rev.map(item => {
           const timeStr = new Date(item.timestamp).toLocaleString('id-ID', { dateStyle: 'short', timeStyle: 'short' });
-          let tagClass = 'base';
-          let tagText = 'Baseline';
-          if (item.eventType === 'PROFILE_CHANGED') { tagClass = 'change'; tagText = 'Perubahan'; }
-          else if (item.eventType === 'NEW_STORY') { tagClass = 'story'; tagText = 'Story'; }
+          let badgeTag = 'Baseline';
+          if (item.eventType === 'PROFILE_CHANGED') badgeTag = 'Perubahan';
+          else if (item.eventType === 'NEW_STORY') badgeTag = 'Story';
 
           let detail = '';
           if (item.eventType === 'INITIAL_BASELINE') {
-            detail = '<span style="color:#cbd5e1;">Perekaman status profil awal ke sistem.</span>';
+            detail = 'Perekaman status profil awal ke sistem.';
           } else if (item.eventType === 'NEW_STORY' && item.story) {
-            detail = \`Story: "\${escapeHtml(item.story.desc || 'Tanpa teks')}" <a href="\${item.story.url}" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:700;margin-left:6px;">[Buka Link]</a>\`;
+            detail = 'Story: "' + escapeHtml(item.story.desc || 'Tanpa teks') + '" <a href="' + item.story.url + '" target="_blank">[Buka Link]</a>';
           } else if (item.changes && item.changes.length > 0) {
             detail = item.changes.map(c => {
-              const delta = c.diff !== undefined ? \` <span class="diff-delta">(\${c.diff > 0 ? '+' : ''}\${c.diff})</span>\` : '';
-              return \`
-                <div class="diff-item">
-                  <span class="diff-label">\${c.label}:</span>
-                  <span class="diff-old">\${escapeHtml(String(c.oldValue))}</span> &rarr;
-                  <span class="diff-new">\${escapeHtml(String(c.newValue))}</span>\${delta}
-                </div>
-              \`;
+              const delta = c.diff !== undefined ? ' (<strong>' + (c.diff > 0 ? '+' : '') + c.diff + '</strong>)' : '';
+              return '<div><strong>' + c.label + ':</strong> <del>' + escapeHtml(String(c.oldValue)) + '</del> &rarr; <ins>' + escapeHtml(String(c.newValue)) + '</ins>' + delta + '</div>';
             }).join('');
           } else {
             detail = escapeHtml(item.summary || '-');
           }
 
           const media = item.screenshot || item.story?.screenshot || item.story?.mediaFile;
-          let thumb = '<span style="color:var(--text-dim);">-</span>';
+          let thumb = '-';
           if (media) {
-            thumb = \`
-              <div class="media-thumb-btn" onclick="openModal('\${media}', '@\${selectedUser} - \${timeStr}')" title="Lihat berkas">
-                <img src="\${media}" alt="Berkas" onerror="this.parentElement.innerHTML='<span style=\\'font-size:12px;padding:4px;display:block;\\'>Foto</span>'">
-              </div>
-            \`;
+            thumb = '<button class="outline secondary" style="margin-bottom:0;padding:0.35rem 0.75rem;font-size:0.85rem;" onclick="openModal(\\'' + media + '\\', \\'@' + selectedUser + ' - ' + timeStr + '\\')">Lihat</button>';
           }
 
           return \`
             <tr>
-              <td style="white-space:nowrap;color:#cbd5e1;font-weight:600;">\${timeStr}</td>
-              <td><span class="tag-badge \${tagClass}">\${tagText}</span></td>
+              <td><small>\${timeStr}</small></td>
+              <td><mark>\${badgeTag}</mark></td>
               <td>\${detail}</td>
               <td>\${thumb}</td>
             </tr>
@@ -1021,101 +551,98 @@ export async function generateHtmlReport() {
       }
 
       stage.innerHTML = \`
-        <div class="stage-top">
-          <div class="profile-header">
-            <div class="profile-user-left">
-              <div class="profile-large-avatar">
-                <img src="\${acc.avatarUrl}" alt="\${acc.nickname}" onerror="this.src='data:image/svg+xml,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 24 24\\' fill=\\'%23444\\'><circle cx=\\'12\\' cy=\\'8\\' r=\\'4\\'/><path d=\\'M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z\\'/></svg>'">
-              </div>
+        <!-- Target Profile Card -->
+        <article>
+          <div class="profile-card-header">
+            <div class="profile-meta-left">
+              <img class="profile-avatar" src="\${acc.avatarUrl}" alt="\${acc.nickname}" onerror="this.src='data:image/svg+xml,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 24 24\\' fill=\\'%23555\\'><circle cx=\\'12\\' cy=\\'8\\' r=\\'4\\'/><path d=\\'M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z\\'/></svg>'">
               <div class="profile-titles">
-                <div class="profile-name">
-                  <span>\${acc.nickname || selectedUser}</span>
-                  \${acc.isVerified ? '<span style="color:var(--accent);font-size:18px;">✓</span>' : ''}
-                </div>
-                <a class="profile-link" href="https://www.tiktok.com/@\${selectedUser}" target="_blank">
-                  <span>@\${selectedUser}</span>
-                  <span style="font-size:14px;">↗</span>
-                </a>
+                <h2>\${acc.nickname || selectedUser} \${acc.isVerified ? '✓' : ''}</h2>
+                <a href="https://www.tiktok.com/@\${selectedUser}" target="_blank">@\${selectedUser} ↗</a>
               </div>
             </div>
-            <div class="profile-actions">
-              <span class="privacy-badge">
+
+            <div class="profile-actions-right">
+              <span class="secondary" style="font-weight:700;font-size:0.95rem;">
                 \${acc.isPrivate ? 'Akun Privat 🔒' : 'Akun Publik 🌐'}
               </span>
               \${latestScreenshot ? \`
-                <button class="btn-secondary" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Tangkapan Layar Profil')">
-                  Lihat Tangkapan Layar ↗
+                <button class="outline" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Tangkapan Layar Profil')">
+                  Lihat Snapshot Profil ↗
                 </button>
               \` : ''}
             </div>
           </div>
 
-          <div class="bio-panel \${acc.bio ? '' : 'empty'}">
-            \${acc.bio ? escapeHtml(acc.bio) : 'Tidak ada teks bio tercantum'}
-          </div>
+          <!-- Bio -->
+          <blockquote>
+            \${acc.bio ? escapeHtml(acc.bio) : '<em>Tidak ada teks bio tercantum.</em>'}
+          </blockquote>
 
-          <div class="metrics-row">
-            <div class="metric-card">
-              <div class="metric-card-label">Video</div>
-              <div class="metric-card-value">\${stats.videoCount ?? 0}</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-card-label">Pengikut</div>
-              <div class="metric-card-value">\${Number(stats.followerCount ?? 0).toLocaleString('id-ID')}</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-card-label">Mengikuti</div>
-              <div class="metric-card-value">\${Number(stats.followingCount ?? 0).toLocaleString('id-ID')}</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-card-label">Suka</div>
-              <div class="metric-card-value">\${Number(stats.heartCount ?? 0).toLocaleString('id-ID')}</div>
-            </div>
+          <!-- 4 Metrics Grid -->
+          <div class="telemetry-row">
+            <article class="telemetry-box">
+              <p>Video</p>
+              <h3>\${stats.videoCount ?? 0}</h3>
+            </article>
+            <article class="telemetry-box">
+              <p>Pengikut</p>
+              <h3>\${Number(stats.followerCount ?? 0).toLocaleString('id-ID')}</h3>
+            </article>
+            <article class="telemetry-box">
+              <p>Mengikuti</p>
+              <h3>\${Number(stats.followingCount ?? 0).toLocaleString('id-ID')}</h3>
+            </article>
+            <article class="telemetry-box">
+              <p>Suka</p>
+              <h3>\${Number(stats.heartCount ?? 0).toLocaleString('id-ID')}</h3>
+            </article>
           </div>
+        </article>
+
+        <!-- Stories & Snapshot Grid (2-column) -->
+        <div class="grid">
+          <article>
+            <header>
+              <strong>Story Aktif (\${stories.length})</strong>
+            </header>
+            \${storiesHtml}
+          </article>
+
+          \${latestScreenshot ? \`
+            <article>
+              <header>
+                <strong>Tangkapan Layar Terakhir</strong>
+              </header>
+              <div class="snapshot-container" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Tangkapan Layar Profil')">
+                <img src="\${latestScreenshot}" alt="Snapshot">
+                <span>Klik untuk perbesar</span>
+              </div>
+            </article>
+          \` : ''}
         </div>
 
-        <div class="stage-content">
-          <div class="sub-section">
-            <div class="content-box">
-              <div class="content-box-title">
-                <span>Story Aktif (\${stories.length})</span>
-              </div>
-              \${storiesHtml}
-            </div>
-
-            \${latestScreenshot ? \`
-              <div class="content-box">
-                <div class="content-box-title">Tangkapan Layar Terakhir</div>
-                <div class="snapshot-thumb-wrapper" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Tangkapan Layar Profil')">
-                  <img src="\${latestScreenshot}" alt="Tangkapan layar">
-                  <span class="snapshot-thumb-label">Klik untuk perbesar</span>
-                </div>
-              </div>
-            \` : ''}
+        <!-- Full-Width Audit Table -->
+        <article>
+          <header>
+            <strong>Riwayat Perubahan Akun</strong>
+          </header>
+          <div style="overflow-x:auto;">
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th scope="col">Waktu</th>
+                  <th scope="col">Kategori</th>
+                  <th scope="col">Detail Perubahan</th>
+                  <th scope="col">Berkas</th>
+                </tr>
+              </thead>
+              <tbody>
+                \${tableRowsHtml}
+              </tbody>
+            </table>
           </div>
-
-          <div class="target-history-box">
-            <div class="target-history-header">
-              <span class="target-history-title">Riwayat Perubahan Akun</span>
-              <span style="font-size:14.5px;color:#cbd5e1;font-weight:700;">\${userEvents.length} Peristiwa</span>
-            </div>
-            <div class="table-scroll-wrap">
-              <table class="data-table">
-                <thead>
-                  <tr>
-                    <th>Waktu</th>
-                    <th>Kategori</th>
-                    <th>Detail Perubahan</th>
-                    <th>Berkas</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  \${rowsHtml}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+        </article>
       \`;
     }
 
@@ -1131,25 +658,12 @@ export async function generateHtmlReport() {
       img.src = src;
       cap.textContent = title || '-';
       dl.href = src;
-      modal.classList.add('active');
+      modal.showModal();
     }
 
-    function closeModal(e) {
-      if (e.target.id === 'modal' || e.target.classList.contains('modal-close-btn')) {
-        document.getElementById('modal').classList.remove('active');
-      }
+    function closeModal() {
+      document.getElementById('modal').close();
     }
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        document.getElementById('modal').classList.remove('active');
-      }
-      const num = parseInt(e.key, 10);
-      if (!isNaN(num) && num >= 1 && num <= usernames.length) {
-        selectedUser = usernames[num - 1];
-        renderApp();
-      }
-    });
 
     renderApp();
   </script>
