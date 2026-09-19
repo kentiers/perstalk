@@ -1,140 +1,114 @@
 # 🎯 TikTok Stalker & Historical Monitoring Tool
 
-Tools otomatis untuk memantau perubahan akun TikTok setiap hari secara historis. Jika ada perubahan (**postingan/video baru, bio, username/nickname, foto profil, link bio, jumlah followers/following/likes, story aktif, status privat, dll**), sistem akan mendeteksi perubahannya, mencatat riwayat perubahan (*historical diff*), mengunduh media story, dan mengambil screenshot secara otomatis ke dalam struktur folder yang rapi.
+Tools pemantau akun TikTok otomatis secara historis menggunakan framework semantik **[Pico CSS v2](https://github.com/picocss/pico)**. Mendeteksi perubahan (**postingan/video baru, bio, username/nickname, foto profil, link bio, jumlah followers/following/likes, story aktif 24 jam, status privat, dll**), mencatat riwayat perubahan (*historical diff*), mengunduh media story (`.jpg` & `.mp4`), dan mengambil tangkapan layar otomatis ke dalam folder terstruktur.
 
 ---
 
-## 📌 Jawaban Masalah & Fitur Utama
+## ⚡ 1. Cara Menjalankan Tiap 6 Jam & Manual
 
-### 1. Kenapa Muncul Tulisan *"Ada masalah / Maaf atas hal tersebut! Coba lagi nanti"* di Web TikTok?
-Pesan ini muncul di bagian feed grid video bawah karena TikTok versi web desktop secara default **membatasi pengunjung anonim (yang belum login)** agar tidak bisa men-scroll daftar video pengguna secara bebas.
-
-**Solusi yang disediakan tools ini:**
-- **Tanpa Login Pun Tetap Akurat**: Tools ini mengekstrak data langsung dari internal server hydration (`__UNIVERSAL_DATA_FOR_REHYDRATION__`), sehingga **jumlah postingan (`videoCount`), bio, nama, followers, likes, hingga status privasi tetap terbaca 100% akurat**. Jika target mengunggah video baru, tools ini langsung mendeteksi pertambahan jumlah video (misal 10 -> 11).
-- **Ingin Video Grid Muncul Penuh?**: Cukup jalankan `npm run login` satu kali. Google Chrome akan terbuka agar Anda dapat login ke TikTok. Sesi login & cookies akan tersimpan permanen di `data/browser-session/`, sehingga saat pemeriksaan berikutnya semua thumbnail video dan feed akan terbuka penuh tanpa pesan error atau captcha.
-
----
-
-### 2. Fitur Story Scraper & Screenshot
-Tools ini **sudah otomatis mendeteksi dan meng-capture Story TikTok**:
-- **Deteksi Story Aktif**: Mengetahui apakah akun sedang memiliki story yang aktif.
-- **Tangkapan Layar (Screenshot) Story**: Membuka story viewer dan mengambil screenshot layar penuh dari setiap story.
-- **Unduh Media Asli (Foto/Video Story)**: Mengunduh langsung file resolusi tinggi (`.jpg` / `.mp4`) dari story target sebelum story tersebut hilang/expired (24 jam).
-- **Pencatatan Riwayat Story**: ID story, caption, tautan langsung, screenshot, dan file media dicatat rapi di `data/history.json` dan `CHANGELOG.md`.
-
----
-
-### 3. Struktur Folder Rapi & Terorganisir
-
-Seluruh tangkapan layar dan file media diatur ke dalam subfolder per akun dan per kategori:
-
-```
-Stalk/
-├── config/
-│   └── accounts.json                 # Konfigurasi akun target & browser
-├── data/
-│   ├── latest-state.json             # Snapshot kondisi terkini setiap akun
-│   ├── history.json                  # Database seluruh riwayat peristiwa & perubahan
-│   └── browser-session/              # Sesi login & cookies Chrome (permanen)
-├── screenshots/
-│   ├── @cecil2507/
-│   │   ├── profile/                  # Tangkapan layar profil
-│   │   │   ├── YYYY-MM-DD_baseline.png
-│   │   │   └── YYYY-MM-DD_change.png
-│   │   └── stories/                  # Tangkapan layar & media story
-│   │       ├── YYYY-MM-DD_story_<id>.png
-│   │       └── YYYY-MM-DD_story_<id>_media.jpg
-│   └── @yukohanz/
-│       ├── profile/
-│       │   └── 2026-09-19_18-45-45_baseline.png
-│       └── stories/
-│           ├── 2026-09-19_story_7686861101333613845.png
-│           ├── 2026-09-19_story_7686861101333613845_media.jpg
-│           ├── 2026-09-19_story_7686953387497147668.png
-│           └── 2026-09-19_story_7686953387497147668_media.jpg
-├── src/
-│   ├── checker.js                    # Engine scraper, detektor diff, screenshot & story
-│   ├── reporter.js                   # Generator CHANGELOG.md & report.html
-│   ├── scheduler.js                  # Pengelola Windows Task Scheduler & Watcher
-│   ├── login.js                      # Helper interaktif login Chrome
-│   └── index.js                      # CLI utama
-├── report.html                       # Dashboard visual interaktif untuk web browser
-├── CHANGELOG.md                      # Catatan riwayat kronologis format Markdown
-├── package.json
-└── README.md
-```
-
----
-
-## 🚀 Cara Penggunaan
-
-### 1. Pengecekan Manual
-Jalankan pengecekan akun sekarang:
+### A. Menjalankan Manual Kapan Saja
+Kapan pun Anda ingin mengecek perubahan akun detik ini juga:
 ```bash
+# Cek akun sekarang
 npm run check
-# atau
-node src/index.js check
+
+# Cek akun sekarang lalu langsung sync & update website publik
+npm run check:push
 ```
 
-### 2. Membuka Dashboard Laporan Visual (HTML)
-Untuk melihat kartu profil, galeri screenshot, dan riwayat perubahan dengan antarmuka web modern:
+### B. Menjalankan Otomatis Tiap 6 Jam (Mode Watch di Terminal)
+Jika laptop/PC menyala dan Anda ingin proses berjalan otomatis di latar belakang setiap 6 jam:
 ```bash
-npm run report
-# atau
-node src/index.js report
+npm run watch
 ```
-*(Atau langsung klik ganda file `report.html` di File Explorer).*
+*(Proses ini akan langsung memeriksa saat pertama kali dijalankan, lalu secara periodik memeriksa kembali setiap 6 jam menggunakan koneksi internet rumah Anda).*
+
+### C. Menjalankan Otomatis Tiap 6 Jam via Windows Task Scheduler (Tanpa Buka Terminal)
+Jika Anda ingin sistem berjalan otomatis di background Windows tanpa perlu membuka terminal:
+```bash
+# Aktifkan jadwal otomatis setiap 6 jam
+npm run schedule
+
+# Cek status jadwal Windows
+npm run schedule:status
+
+# Hapus jadwal jika sudah tidak ingin dipakai
+npm run schedule:remove
+```
 
 ---
 
-## ⏰ Menjalankan Otomatis Setiap Hari
+## 🌐 2. Cara Scrape Pakai Internet Rumah tapi Laporan Bisa Diakses Publik
 
-### Cara 1: Menggunakan Windows Task Scheduler (Direkomendasikan)
-Tools ini dapat didaftarkan langsung ke Windows Task Scheduler sehingga otomatis berjalan setiap hari pada jam tertentu (misal jam 08:00 pagi) bahkan tanpa membuka aplikasi atau terminal.
+Ini adalah metode **paling aman, gratis, dan anti-blokir**:
 
-**Daftarkan jadwal harian (default pukul 08:00 pagi):**
-```bash
-node src/index.js schedule 08:00
-```
-*(Ganti `08:00` dengan jam yang Anda inginkan, format 24 jam `HH:mm`)*
-
-**Cek status jadwal:**
-```bash
-node src/index.js schedule:status
-```
-
-**Hapus jadwal harian jika sudah tidak ingin dijalankan:**
-```bash
-node src/index.js schedule:remove
-```
-
-### Cara 2: Mode Watch / Background Service
-Jika Anda ingin membiarkan terminal memantau secara terus-menerus:
-```bash
-node src/index.js watch 24
-```
-*(Parameter `24` berarti interval pengecekan setiap 24 jam)*
+### Kenapa Pakai Metode Ini?
+1. **Scraping berjalan di Laptop/PC Anda (Internet Rumah):**
+   - Menggunakan IP residensial (*Indihome/Biznet/FirstMedia/Telkomsel dll*).
+   - TikTok **tidak memblokir atau membatasi** IP rumahan (berbeda dengan server cloud/VPS datacenter yang rawan diblokir WAF TikTok).
+2. **Laporan & Screenshot Di-Host di GitHub Pages (Publik 24/7):**
+   - Hasil laporan (`index.html`) dan folder `screenshots/` otomatis di-push ke GitHub.
+   - GitHub Pages menyajikan website statis secara publik di `https://USERNAME.github.io/stalk/`.
+   - Anda dapat membuka dashboard dari HP, tablet, atau komputer mana pun dari luar rumah tanpa perlu menyalakan port forwarding atau membahayakan IP rumah.
 
 ---
 
-## 👥 Menambah Akun Yang Dipantau
+### 🚀 Cara Menghubungkan ke GitHub Pages (Hanya 1 Kali Setting)
+
+#### Langkah 1: Buat Repository di GitHub
+1. Buka [github.com/new](https://github.com/new).
+2. Beri nama repository: `stalk` (pilih **Public**).
+3. Klik **Create repository**.
+
+#### Langkah 2: Hubungkan & Push Proyek
+Buka terminal di folder proyek ini (`C:\Users\nioh\Documents\Project\Stalk`):
+```bash
+# Ganti USERNAME dengan username akun GitHub Anda
+git remote add origin https://github.com/USERNAME/stalk.git
+
+# Push seluruh data awal ke GitHub
+git branch -M main
+git push -u origin main
+```
+
+#### Langkah 3: Aktifkan GitHub Pages
+1. Di repository GitHub Anda, buka menu **Settings** &rarr; **Pages** (di sidebar kiri).
+2. Di bagian **Build and deployment**:
+   - **Source**: Pilih **Deploy from a branch**.
+   - **Branch**: Pilih `main` dan folder `/ (root)`.
+3. Klik **Save**.
+4. Website Anda langsung aktif di:
+   ```
+   https://USERNAME.github.io/stalk/
+   ```
+
+Setiap kali Anda menjalankan `npm run check:push` atau saat jadwal 6 jam berjalan, data terbaru otomatis di-push ke GitHub dan website publik Anda akan langsung ter-update!
+
+---
+
+## 👥 Daftar Akun Yang Sedang Dipantau (6 Akun)
+
+1. `@cecil2507`
+2. `@yukohanz` (Story Aktif terdeteksi)
+3. `@yucallhanz_` (Story Aktif terdeteksi)
+4. `@cecilelek2507`
+5. `@cecil250725`
+6. `@saaaaa_180`
 
 Untuk menambah akun baru:
 ```bash
 node src/index.js add username_baru
 ```
-Atau edit langsung file `config/accounts.json`.
-
-Untuk melihat status dan daftar akun saat ini:
+Untuk melihat status terkini seluruh akun di terminal:
 ```bash
-node src/index.js list
+npm run list
 ```
 
 ---
 
-## 🔑 Login TikTok (Opsional)
-Jika Anda ingin tools ini memiliki akses penuh ke feed video akun tanpa pembatasan pengunjung anonim:
+## 🖥️ Melihat Laporan di Komputer Lokal
+Buka berkas `index.html` atau `report.html` di browser Anda:
 ```bash
-npm run login
+npm run report
 ```
-Jendela Google Chrome akan terbuka. Silakan login ke akun TikTok Anda. Session login & cookies akan tersimpan secara otomatis di folder `data/browser-session/` untuk seluruh pengecekan selanjutnya.
+*(Dibangun dengan 100% Pico CSS v2 murni, tanpa font monospace, tanpa garis neon slop, responsif di mobile & desktop).*

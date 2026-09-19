@@ -34,7 +34,8 @@
   "settings": {
     "screenshotAlwaysOnInitial": true,
     "screenshotOnChangeOnly": true,
-    "checkIntervalHours": 24,
+    "checkIntervalHours": 6,
+    "autoGitPush": true,
     "headless": true,
     "chromePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     "viewport": {

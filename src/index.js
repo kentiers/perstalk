@@ -102,9 +102,14 @@ async function runCli() {
     case "check":
     case "run": {
       const headful = args.includes("--headful");
+      const shouldPush = args.includes("--push");
       await checkAllAccounts({ headful });
       await generateChangelog();
       await generateHtmlReport();
+      if (shouldPush) {
+        const { syncToGit } = await import("./scheduler.js");
+        syncToGit();
+      }
       break;
     }
 
@@ -113,7 +118,7 @@ async function runCli() {
       break;
 
     case "watch": {
-      const interval = parseFloat(args[1]) || 24;
+      const interval = parseFloat(args[1]) || 6;
       await startWatcher(interval);
       break;
     }
@@ -123,8 +128,8 @@ async function runCli() {
       break;
 
     case "schedule": {
-      const time = args[1] || "08:00";
-      setupWindowsSchedule(time);
+      const param = args[1] || "6";
+      setupWindowsSchedule(param);
       break;
     }
 

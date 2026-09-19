@@ -1,33 +1,58 @@
 import { execSync } from "child_process";
 import path from "path";
 import { fileURLToPath } from "url";
-import { checkAllAccounts } from "./checker.js";
+import { checkAllAccounts, loadConfig } from "./checker.js";
 import { generateChangelog, generateHtmlReport } from "./reporter.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, "..");
-const TASK_NAME = "TikTokStalkerDailyCheck";
+const TASK_NAME = "TikTokStalkerCheck";
 
-// Setup Windows Task Scheduler
-export function setupWindowsSchedule(time = "08:00") {
+// Sync latest state & screenshots to GitHub
+export function syncToGit() {
+  try {
+    execSync("git add data/ screenshots/ CHANGELOG.md report.html index.html", { stdio: "ignore" });
+    try {
+      execSync('git commit -m "Auto-update TikTok tracking data [skip ci]"', { stdio: "ignore" });
+    } catch {}
+    execSync("git push", { stdio: "inherit" });
+    console.log("🚀 [GIT SYNC] Data & laporan terbaru berhasil di-push ke GitHub Pages!");
+  } catch (err) {
+    console.log("ℹ️ [GIT SYNC] Tidak ada perubahan baru atau remote belum terhubung:", err.message);
+  }
+}
+
+// Setup Windows Task Scheduler (Supports interval in hours e.g. 6 or specific time e.g. "08:00")
+export function setupWindowsSchedule(intervalOrTime = "6") {
   const nodeExe = process.execPath;
   const scriptPath = path.join(ROOT_DIR, "src", "index.js");
-  const command = `"${nodeExe}" "${scriptPath}" check`;
+  const command = `"${nodeExe}" "${scriptPath}" check --push`;
 
   console.log(`\n📅 Mendaftarkan task otomatis ke Windows Task Scheduler...`);
   console.log(`   Nama Task: ${TASK_NAME}`);
-  console.log(`   Jadwal   : Setiap hari pukul ${time}`);
   console.log(`   Perintah : ${command}`);
 
   try {
-    const cmd = `schtasks /Create /SC DAILY /TN "${TASK_NAME}" /TR "${command}" /ST ${time} /F`;
+    let cmd = "";
+    if (intervalOrTime.includes(":")) {
+      // Specific daily time, e.g. "08:00"
+      console.log(`   Jadwal   : Setiap hari pukul ${intervalOrTime}`);
+      cmd = `schtasks /Create /SC DAILY /TN "${TASK_NAME}" /TR "${command}" /ST ${intervalOrTime} /F`;
+    } else {
+      // Interval in hours, e.g. 6 hours
+      const hours = parseInt(intervalOrTime, 10) || 6;
+      console.log(`   Jadwal   : Setiap ${hours} jam sekali`);
+      cmd = `schtasks /Create /SC HOURLY /MO ${hours} /TN "${TASK_NAME}" /TR "${command}" /F`;
+    }
+
     execSync(cmd, { stdio: "inherit" });
-    console.log(`\n✅ BERHASIL! Windows Task Scheduler telah dibuat.`);
-    console.log(`   Tools ini akan berjalan otomatis setiap hari pada jam ${time} tanpa perlu membuka terminal.`);
+    console.log(`\n✅ BERHASIL! Windows Task Scheduler telah aktif.`);
+    console.log(`   Sistem akan berjalan di background PC Anda menggunakan koneksi internet rumah.`);
+    console.log(`   Setiap selesai memeriksa, hasil akan otomatis di-push ke GitHub Pages.`);
   } catch (err) {
     console.error(`\n❌ Gagal mendaftarkan ke Windows Task Scheduler: ${err.message}`);
-    console.log(`💡 Tips: Jalankan Command Prompt / Terminal sebagai Administrator jika diperlukan akses elevasi.`);
+    console.log(`💡 Tips: Buka Terminal / CMD sebagai Administrator.`);
   }
 }
 
@@ -51,14 +76,17 @@ export function getScheduleStatus() {
     console.log(output);
   } catch {
     console.log(`ℹ️ Task "${TASK_NAME}" belum terdaftar di Windows Task Scheduler.`);
-    console.log(`   Gunakan 'node src/index.js schedule [HH:mm]' untuk mendaftarkan jadwal.`);
+    console.log(`   Gunakan 'node src/index.js schedule 6' untuk mendaftarkan jadwal setiap 6 jam.`);
   }
 }
 
-// In-process Daemon / Watcher mode
-export async function startWatcher(intervalHours = 24) {
-  console.log(`\n⏱️ [WATCH MODE DIAKTIFKAN]`);
-  console.log(`   Pengecekan akan berjalan otomatis setiap ${intervalHours} jam.`);
+// In-process Daemon / Watcher mode (Defaults to 6 hours)
+export async function startWatcher(intervalHours = 6) {
+  const config = await loadConfig();
+  const hours = intervalHours || config.settings?.checkIntervalHours || 6;
+
+  console.log(`\n⏱️ [WATCH MODE AKTIF - INTERNET RUMAH]`);
+  console.log(`   Pengecekan berjalan otomatis setiap ${hours} jam.`);
   console.log(`   Tekan Ctrl+C untuk berhenti.\n`);
 
   const runCycle = async () => {
@@ -66,6 +94,10 @@ export async function startWatcher(intervalHours = 24) {
       await checkAllAccounts();
       await generateChangelog();
       await generateHtmlReport();
+
+      if (config.settings?.autoGitPush) {
+        syncToGit();
+      }
     } catch (err) {
       console.error(`[WATCH ERROR] Kesalahan saat pengecekan:`, err);
     }
@@ -74,7 +106,7 @@ export async function startWatcher(intervalHours = 24) {
   // Run first check right away
   await runCycle();
 
-  // Schedule intervals
-  const intervalMs = intervalHours * 60 * 60 * 1000;
+  // Schedule intervals in milliseconds
+  const intervalMs = hours * 60 * 60 * 1000;
   setInterval(runCycle, intervalMs);
 }

@@ -22,9 +22,9 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:36:59.430Z",
-    "lastChangeAt": "2026-09-19T12:36:59.430Z",
-    "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png"
+    "lastCheckedAt": "2026-09-19T12:44:17.241Z",
+    "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png",
+    "lastChangeAt": "2026-09-19T12:36:59.430Z"
   },
   "yukohanz": {
     "userId": "7086484683966153755",
@@ -68,7 +68,7 @@
         "mediaFile": "screenshots/@yukohanz/stories/2026-09-19_story_7686953387497147668_media.jpg"
       }
     ],
-    "lastCheckedAt": "2026-09-19T12:37:05.424Z",
+    "lastCheckedAt": "2026-09-19T12:44:21.589Z",
     "lastBaselineScreenshot": "screenshots/@yukohanz/profile/2026-09-19_18-45-45_baseline.png"
   },
   "yucallhanz_": {
@@ -78,7 +78,7 @@
     "nickname": "hanssOfficial",
     "bio": "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐄 📊",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/7bfeb12046517849869d363797c45a65~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=ab1df5b0&x-expires=1789992000&x-signature=qoqhy2yAzh%2BIEYVyuFuUCJb9cSk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+    "avatarUrl": "https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/7bfeb12046517849869d363797c45a65~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=25f37178&x-expires=1789992000&x-signature=hHEl%2BNu0y%2BsdHspwuMxKamelXpc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -113,7 +113,7 @@
         "mediaFile": "screenshots/@yucallhanz_/stories/2026-09-19_story_7686954064059321620_media.jpg"
       }
     ],
-    "lastCheckedAt": "2026-09-19T12:37:09.928Z",
+    "lastCheckedAt": "2026-09-19T12:44:26.022Z",
     "lastBaselineScreenshot": "screenshots/@yucallhanz_/profile/2026-09-19_19-09-33_baseline.png"
   },
   "cecilelek2507": {
@@ -139,7 +139,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:37:14.464Z",
+    "lastCheckedAt": "2026-09-19T12:44:30.521Z",
     "lastBaselineScreenshot": "screenshots/@cecilelek2507/profile/2026-09-19_19-09-48_baseline.png"
   },
   "cecil250725": {
@@ -165,7 +165,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:37:19.109Z",
+    "lastCheckedAt": "2026-09-19T12:44:34.963Z",
     "lastBaselineScreenshot": "screenshots/@cecil250725/profile/2026-09-19_19-09-54_baseline.png"
   },
   "saaaaa_180": {
@@ -191,7 +191,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:37:23.559Z",
+    "lastCheckedAt": "2026-09-19T12:44:39.361Z",
     "lastBaselineScreenshot": "screenshots/@saaaaa_180/profile/2026-09-19_19-09-59_baseline.png"
   }
 }
