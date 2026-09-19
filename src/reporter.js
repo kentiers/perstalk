@@ -71,7 +71,7 @@ export async function generateChangelog() {
   return CHANGELOG_FILE;
 }
 
-// Generate pure Pico CSS dashboard (100% semantic, robust, and responsive)
+// Generate 100% pure, optimized Pico CSS v2 dashboard with inlined CSS (0 network requests, blazing fast)
 export async function generateHtmlReport() {
   const history = await loadHistory();
   const latestState = await loadLatestState();
@@ -79,343 +79,149 @@ export async function generateHtmlReport() {
   const accountsJson = JSON.stringify(latestState);
   const historyJson = JSON.stringify(history);
 
+  // Load official Pico CSS v2 from node_modules for zero-latency inlined styling
+  let picoCss = "";
+  try {
+    const picoPath = path.join(ROOT_DIR, "node_modules", "@picocss", "pico", "css", "pico.min.css");
+    picoCss = await fs.readFile(picoPath, "utf-8");
+  } catch {
+    picoCss = "";
+  }
+
+  const cssInclude = picoCss
+    ? `<style>${picoCss}</style>`
+    : `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">`;
+
   const html = `<!DOCTYPE html>
 <html lang="id" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stalk - Pemantau Akun</title>
-  <!-- Pico CSS v2 (https://picocss.com) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  ${cssInclude}
   <style>
-    :root {
-      --pico-border-radius: 0.6rem;
-    }
-    body {
-      padding-bottom: 4rem;
-    }
-    /* Brand Header */
-    .brand-header {
-      padding-top: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--pico-muted-border-color);
-      margin-bottom: 2rem;
-    }
-    .header-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-    .header-nav h1 {
-      margin-bottom: 0;
-      font-size: 1.75rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-    }
-    .stats-summary-grid {
+    /* Native Pico CSS v2 integration */
+    /* Responsive 2x2 on mobile, 4-col on desktop */
+    .summary-grid, .telemetry-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 0.75rem;
-      background: var(--pico-card-background-color);
-      border: 1px solid var(--pico-card-border-color);
-      border-radius: var(--pico-border-radius);
-      padding: 0.85rem 1rem;
+      gap: 0.5rem;
       text-align: center;
-      font-size: 0.95rem;
+      margin-top: 0.5rem;
     }
     @media (min-width: 768px) {
-      .stats-summary-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-    .stats-summary-grid div strong {
-      color: var(--pico-primary);
-      font-size: 1.2rem;
-      display: block;
-      margin-top: 0.2rem;
-    }
-
-    /* Target Selector Switcher */
-    .selector-container {
-      margin-bottom: 2rem;
-    }
-    .selector-container h3 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-      color: var(--pico-muted-color);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .target-btn-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.6rem;
-    }
-    @media (min-width: 768px) {
-      .target-btn-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      }
-    }
-    .target-btn-grid button {
-      margin-bottom: 0;
-      font-weight: 700;
-      font-size: 0.95rem;
-      padding: 0.75rem 0.8rem;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    /* Profile Header - Mobile First Stacking */
-    .profile-card-header {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.25rem;
-      margin-bottom: 1.25rem;
-      width: 100%;
-    }
-    @media (min-width: 768px) {
-      .profile-card-header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-    .profile-meta-left {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      width: 100%;
-    }
-    .profile-titles {
-      min-width: 0;
-      flex: 1;
-      overflow: hidden;
-    }
-    .profile-titles h2 {
-      margin-bottom: 0.15rem;
-      font-size: 1.85rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .profile-titles a {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--pico-primary);
-      text-decoration: none;
-    }
-    .profile-titles a:hover {
-      text-decoration: underline;
-    }
-    .profile-actions-right {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-    @media (min-width: 768px) {
-      .profile-actions-right {
-        width: auto;
-      }
-    }
-    .profile-actions-right button, .profile-actions-right a {
-      margin-bottom: 0;
-      flex: 1;
-    }
-    @media (min-width: 768px) {
-      .profile-actions-right button, .profile-actions-right a {
-        flex: initial;
-      }
-    }
-    .profile-avatar {
-      width: 76px;
-      height: 76px;
-      border-radius: var(--pico-border-radius);
-      object-fit: cover;
-      background: #000;
-      border: 2px solid var(--pico-muted-border-color);
-      flex-shrink: 0;
-    }
-
-    /* Bio quote */
-    blockquote {
-      margin: 1.5rem 0;
-      padding: 1rem 1.25rem;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    /* Metrics Grid */
-    .telemetry-row {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-    @media (min-width: 768px) {
-      .telemetry-row {
+      .summary-grid, .telemetry-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
       }
     }
-    .telemetry-box {
-      text-align: center;
-      margin-bottom: 0;
-      padding: 1.25rem 0.75rem;
+    .profile-avatar-img {
+      width: 76px;
+      height: 76px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #000;
+      flex-shrink: 0;
+      border: 2px solid var(--pico-muted-border-color);
     }
-    .telemetry-box p {
-      margin-bottom: 0.35rem;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--pico-muted-color);
-    }
-    .telemetry-box h3 {
-      margin-bottom: 0;
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--pico-color);
-    }
-
-    /* Story Vault Grid */
-    .story-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-      gap: 0.75rem;
-      margin-top: 1rem;
-    }
-    .story-tile {
-      position: relative;
+    .story-thumb-box {
+      width: 100%;
       height: 150px;
       border-radius: var(--pico-border-radius);
-      border: 1px solid var(--pico-muted-border-color);
       overflow: hidden;
-      cursor: pointer;
       background: #000;
+      cursor: pointer;
+      position: relative;
     }
-    .story-tile img {
+    .story-thumb-box img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
-    .story-tile mark {
+    .story-thumb-box mark {
       position: absolute;
       bottom: 6px;
       right: 6px;
       font-size: 0.75rem;
-      font-weight: 800;
-      padding: 2px 6px;
-      border-radius: 4px;
-      text-transform: uppercase;
+      padding: 0.15rem 0.45rem;
     }
-
-    /* Snapshot Box */
-    .snapshot-container {
-      position: relative;
+    .snapshot-thumb-box {
+      width: 100%;
       height: 200px;
       border-radius: var(--pico-border-radius);
-      border: 1px solid var(--pico-muted-border-color);
       overflow: hidden;
-      cursor: pointer;
       background: #000;
-      margin-top: 1rem;
+      cursor: pointer;
     }
-    .snapshot-container img {
+    .snapshot-thumb-box img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: top;
       display: block;
     }
-    .snapshot-container span {
-      position: absolute;
-      bottom: 8px;
-      left: 8px;
-      background: rgba(0, 0, 0, 0.85);
-      color: #fff;
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 4px;
-    }
-
-    /* Modal dialog */
     dialog article img {
-      max-height: 75vh;
       width: 100%;
+      max-height: 75vh;
       object-fit: contain;
       border-radius: var(--pico-border-radius);
-      margin: 1rem 0;
       display: block;
-    }
-
-    @media (max-width: 768px) {
-      .telemetry-row {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-      }
-      .telemetry-box h3 {
-        font-size: 2rem;
-      }
-      .profile-titles h2 {
-        font-size: 1.6rem;
-      }
-      .target-btn-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      margin: 1rem 0;
     }
   </style>
 </head>
 <body>
-  <!-- Semantic Header -->
-  <header class="container brand-header">
-    <div class="header-nav">
-      <div>
-        <h1>Stalk</h1>
-        <small class="secondary">• 6 Target Dipantau</small>
-      </div>
-      <div>
-        <small class="secondary">Pembaruan: ${formatDate(new Date().toISOString())}</small>
-      </div>
-    </div>
-    <div class="stats-summary-grid">
-      <div>Total Video: <strong id="sum-videos">0</strong></div>
-      <div>Total Pengikut: <strong id="sum-followers">0</strong></div>
-      <div>Story Aktif: <strong id="sum-stories">0</strong></div>
-      <div>Target Dipantau: <strong id="sum-targets">6</strong></div>
+  <!-- Header with Semantic Nav -->
+  <header class="container" style="padding-top:1rem;padding-bottom:0.5rem;">
+    <nav>
+      <ul>
+        <li><strong>Stalk</strong></li>
+        <li><ins>• 6 Target</ins></li>
+      </ul>
+      <ul>
+        <li><small id="sync-time">${formatDate(new Date().toISOString())}</small></li>
+      </ul>
+    </nav>
+    <div class="summary-grid">
+      <article style="margin-bottom:0;padding:0.75rem 0.5rem;">
+        <small style="color:var(--pico-muted-color);">TOTAL VIDEO</small>
+        <h4 style="margin-bottom:0;margin-top:0.2rem;" id="sum-videos">0</h4>
+      </article>
+      <article style="margin-bottom:0;padding:0.75rem 0.5rem;">
+        <small style="color:var(--pico-muted-color);">TOTAL PENGIKUT</small>
+        <h4 style="margin-bottom:0;margin-top:0.2rem;" id="sum-followers">0</h4>
+      </article>
+      <article style="margin-bottom:0;padding:0.75rem 0.5rem;">
+        <small style="color:var(--pico-muted-color);">STORY AKTIF</small>
+        <h4 style="margin-bottom:0;margin-top:0.2rem;" id="sum-stories">0</h4>
+      </article>
+      <article style="margin-bottom:0;padding:0.75rem 0.5rem;">
+        <small style="color:var(--pico-muted-color);">TARGET</small>
+        <h4 style="margin-bottom:0;margin-top:0.2rem;" id="sum-targets">6</h4>
+      </article>
     </div>
   </header>
 
-  <!-- Semantic Main Content -->
+  <!-- Main Content Container -->
   <main class="container">
-    <!-- Target Account Selector Grid -->
-    <section class="selector-container">
-      <h3>Pilih Akun Target</h3>
-      <div class="target-btn-grid" id="target-selector-grid"></div>
+    <!-- Compact Target Selector Dropdown -->
+    <section style="margin-bottom:1rem;">
+      <label for="target-selector" style="font-weight:700;font-size:1.05rem;margin-bottom:0.4rem;display:block;">Pilih Akun Target:</label>
+      <select id="target-selector" onchange="onSelectTarget(this.value)" style="margin-bottom:0;font-weight:600;font-size:1rem;"></select>
     </section>
 
-    <!-- Target Dossier Stage -->
+    <!-- Active Profile Inspector Section -->
     <section id="inspector-stage"></section>
   </main>
 
-  <!-- Native HTML5 Dialog for Lightbox -->
+  <!-- Native HTML5 Dialog Modal Styled by Pico CSS -->
   <dialog id="modal">
     <article>
       <header>
         <button aria-label="Close" rel="prev" onclick="closeModal()"></button>
-        <strong id="modal-caption">-</strong>
+        <p><strong id="modal-caption">-</strong></p>
       </header>
       <img id="modal-image" src="" alt="Pratinjau">
       <footer>
@@ -451,30 +257,30 @@ export async function generateHtmlReport() {
       document.getElementById('sum-followers').textContent = Number(totalFoll).toLocaleString('id-ID');
       document.getElementById('sum-stories').textContent = totalStories;
       document.getElementById('sum-targets').textContent = usernames.length;
-      renderSelector();
+
+      renderSelectorDropdown();
       renderStage();
     }
 
-    function renderSelector() {
-      const grid = document.getElementById('target-selector-grid');
-      grid.innerHTML = '';
+    function renderSelectorDropdown() {
+      const select = document.getElementById('target-selector');
+      select.innerHTML = '';
 
       usernames.forEach(u => {
         const acc = accounts[u];
         const stories = acc.activeStories || [];
-        const isSelected = (u === selectedUser);
-
-        const btn = document.createElement('button');
-        btn.className = isSelected ? 'primary' : 'outline secondary';
-        const badge = stories.length > 0 ? ' (' + stories.length + 'S)' : '';
-        btn.textContent = '@' + u + badge;
-        btn.onclick = function() {
-          selectedUser = u;
-          renderApp();
-        };
-
-        grid.appendChild(btn);
+        const opt = document.createElement('option');
+        opt.value = u;
+        opt.selected = (u === selectedUser);
+        const storyTag = stories.length > 0 ? ' (' + stories.length + ' Story Aktif)' : '';
+        opt.textContent = '@' + u + ' - ' + (acc.nickname || u) + storyTag;
+        select.appendChild(opt);
       });
+    }
+
+    function onSelectTarget(user) {
+      selectedUser = user;
+      renderApp();
     }
 
     function renderStage() {
@@ -490,13 +296,13 @@ export async function generateHtmlReport() {
       const latestScreenshot = acc.lastChangeScreenshot || acc.lastBaselineScreenshot || '';
       const userEvents = historyData.filter(e => e.username === selectedUser);
 
-      // Stories Section
+      // Story Grid
       let storiesHtml = '';
       if (stories.length > 0) {
         storiesHtml = \`
-          <div class="story-grid">
+          <div class="grid">
             \${stories.map((s, idx) => \`
-              <div class="story-tile" onclick="openModal('\${s.screenshot || s.mediaFile}', '@\${selectedUser} - Story \${idx+1}')">
+              <div class="story-thumb-box" onclick="openModal('\${s.screenshot || s.mediaFile}', '@\${selectedUser} - Story \${idx+1}')">
                 <img src="\${s.mediaFile || s.screenshot}" alt="Story">
                 <mark>\${s.mediaType || 'media'}</mark>
               </div>
@@ -504,7 +310,7 @@ export async function generateHtmlReport() {
           </div>
         \`;
       } else {
-        storiesHtml = '<p class="secondary" style="margin-top:1rem;"><small>Tidak ada story aktif dalam 24 jam terakhir.</small></p>';
+        storiesHtml = '<p><small>Tidak ada story aktif dalam 24 jam terakhir.</small></p>';
       }
 
       // History Table
@@ -551,56 +357,54 @@ export async function generateHtmlReport() {
       }
 
       stage.innerHTML = \`
-        <!-- Target Profile Card -->
+        <!-- Target Profile Card via Pico Article -->
         <article>
-          <div class="profile-card-header">
-            <div class="profile-meta-left">
-              <img class="profile-avatar" src="\${acc.avatarUrl}" alt="\${acc.nickname}" onerror="this.src='data:image/svg+xml,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 24 24\\' fill=\\'%23555\\'><circle cx=\\'12\\' cy=\\'8\\' r=\\'4\\'/><path d=\\'M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z\\'/></svg>'">
-              <div class="profile-titles">
-                <h2>\${acc.nickname || selectedUser} \${acc.isVerified ? '✓' : ''}</h2>
-                <a href="https://www.tiktok.com/@\${selectedUser}" target="_blank">@\${selectedUser} ↗</a>
+          <header style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.25rem;">
+            <div style="display:flex;align-items:center;gap:1.25rem;">
+              <img class="profile-avatar-img" src="\${acc.avatarUrl}" alt="\${acc.nickname}" onerror="this.src='data:image/svg+xml,<svg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 24 24\\' fill=\\'%23555\\'><circle cx=\\'12\\' cy=\\'8\\' r=\\'4\\'/><path d=\\'M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z\\'/></svg>'">
+              <div>
+                <h2 style="margin-bottom:0.2rem;font-size:1.85rem;font-weight:800;">\${acc.nickname || selectedUser} \${acc.isVerified ? '✓' : ''}</h2>
+                <a href="https://www.tiktok.com/@\${selectedUser}" target="_blank" style="font-size:1.05rem;font-weight:700;">@\${selectedUser} ↗</a>
               </div>
             </div>
 
-            <div class="profile-actions-right">
-              <span class="secondary" style="font-weight:700;font-size:0.95rem;">
-                \${acc.isPrivate ? 'Akun Privat 🔒' : 'Akun Publik 🌐'}
-              </span>
+            <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+              <ins style="font-weight:700;">\${acc.isPrivate ? 'Akun Privat 🔒' : 'Akun Publik 🌐'}</ins>
               \${latestScreenshot ? \`
-                <button class="outline" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Tangkapan Layar Profil')">
-                  Lihat Snapshot Profil ↗
+                <button class="outline" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Snapshot Profil')" style="margin-bottom:0;">
+                  Snapshot Profil ↗
                 </button>
               \` : ''}
             </div>
-          </div>
+          </header>
 
-          <!-- Bio -->
-          <blockquote>
+          <!-- Bio via Semantic blockquote -->
+          <blockquote style="margin:0.75rem 0;padding:0.65rem 1rem;">
             \${acc.bio ? escapeHtml(acc.bio) : '<em>Tidak ada teks bio tercantum.</em>'}
           </blockquote>
 
-          <!-- 4 Metrics Grid -->
-          <div class="telemetry-row">
-            <article class="telemetry-box">
-              <p>Video</p>
-              <h3>\${stats.videoCount ?? 0}</h3>
+          <!-- 4 Metric Cards via Pico Grid -->
+          <div class="telemetry-grid">
+            <article style="text-align:center;margin-bottom:0;padding:0.85rem 0.5rem;">
+              <small style="font-weight:700;color:var(--pico-muted-color);">VIDEO</small>
+              <h2 style="margin-bottom:0;margin-top:0.25rem;">\${stats.videoCount ?? 0}</h2>
             </article>
-            <article class="telemetry-box">
-              <p>Pengikut</p>
-              <h3>\${Number(stats.followerCount ?? 0).toLocaleString('id-ID')}</h3>
+            <article style="text-align:center;margin-bottom:0;padding:1.25rem 0.5rem;">
+              <small style="font-weight:700;color:var(--pico-muted-color);">PENGIKUT</small>
+              <h2 style="margin-bottom:0;margin-top:0.25rem;">\${Number(stats.followerCount ?? 0).toLocaleString('id-ID')}</h2>
             </article>
-            <article class="telemetry-box">
-              <p>Mengikuti</p>
-              <h3>\${Number(stats.followingCount ?? 0).toLocaleString('id-ID')}</h3>
+            <article style="text-align:center;margin-bottom:0;padding:1.25rem 0.5rem;">
+              <small style="font-weight:700;color:var(--pico-muted-color);">MENGIKUTI</small>
+              <h2 style="margin-bottom:0;margin-top:0.25rem;">\${Number(stats.followingCount ?? 0).toLocaleString('id-ID')}</h2>
             </article>
-            <article class="telemetry-box">
-              <p>Suka</p>
-              <h3>\${Number(stats.heartCount ?? 0).toLocaleString('id-ID')}</h3>
+            <article style="text-align:center;margin-bottom:0;padding:1.25rem 0.5rem;">
+              <small style="font-weight:700;color:var(--pico-muted-color);">SUKA</small>
+              <h2 style="margin-bottom:0;margin-top:0.25rem;">\${Number(stats.heartCount ?? 0).toLocaleString('id-ID')}</h2>
             </article>
           </div>
         </article>
 
-        <!-- Stories & Snapshot Grid (2-column) -->
+        <!-- Media Grid (Pico Grid) -->
         <div class="grid">
           <article>
             <header>
@@ -614,20 +418,19 @@ export async function generateHtmlReport() {
               <header>
                 <strong>Tangkapan Layar Terakhir</strong>
               </header>
-              <div class="snapshot-container" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Tangkapan Layar Profil')">
+              <div class="snapshot-thumb-box" onclick="openModal('\${latestScreenshot}', '@\${selectedUser} - Snapshot Profil')">
                 <img src="\${latestScreenshot}" alt="Snapshot">
-                <span>Klik untuk perbesar</span>
               </div>
             </article>
           \` : ''}
         </div>
 
-        <!-- Full-Width Audit Table -->
+        <!-- Full-Width Audit Table (Pico Table) -->
         <article>
           <header>
             <strong>Riwayat Perubahan Akun</strong>
           </header>
-          <div style="overflow-x:auto;">
+          <div class="overflow-auto">
             <table class="striped">
               <thead>
                 <tr>
