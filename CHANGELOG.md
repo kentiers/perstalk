@@ -1,21 +1,38 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **19/09/26, 19.55**
+Terakhir diperiksa: **20/09/26, 01.55**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 10 | 67 | 0 | 0 | 19/9/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 10 | 1278 | 3 | 1776 | 2 | 19/9/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 2 | 19/9/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 19/9/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 19/9/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 526 | 37 | 6466 | 0 | 19/9/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 8 | 69 | 0 | 0 | 20/9/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 10 | 1278 | 3 | 1776 | 1 | 20/9/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 2 | 20/9/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 20/9/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 20/9/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 527 | 37 | 6466 | 0 | 20/9/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 20/09/26, 01.55 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "526" &rarr; "527" (+1)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-09-20_01-55-52_change.png`](screenshots/@saaaaa_180/profile/2026-09-20_01-55-52_change.png)
+
+---
+
+### 20/09/26, 01.55 - @cecil2507 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "10" &rarr; "8" (-2)
+- Jumlah Mengikuti (Following): "67" &rarr; "69" (+2)
+
+Berkas: [`screenshots/@cecil2507/profile/2026-09-20_01-55-17_change.png`](screenshots/@cecil2507/profile/2026-09-20_01-55-17_change.png)
+
+---
 
 ### 19/09/26, 19.55 - @saaaaa_180 (PROFILE_CHANGED)
 
