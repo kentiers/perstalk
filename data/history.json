@@ -360,5 +360,49 @@
       "lastChangeAt": "2026-09-19T12:36:59.430Z",
       "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png"
     }
+  },
+  {
+    "id": "evt_1789822509582_5ln2o",
+    "timestamp": "2026-09-19T12:55:08.906Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Bio / Signature)",
+    "changes": [
+      {
+        "field": "bio",
+        "label": "Bio / Signature",
+        "oldValue": "nyari apa? gada yang jadi selingkuhan disini mah, ga sasimo kaya si onoh🫣",
+        "newValue": "",
+        "isSignificant": true
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-09-19_19-55-08_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/95f7a7b41d5e48a1c32928cbf8ac36b1~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=dc7798b0&x-expires=1789992000&x-signature=LgdrsARZA5bgWmfMxis8IVW81jA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 526,
+        "followingCount": 37,
+        "heartCount": 6466,
+        "videoCount": 10,
+        "diggCount": 0,
+        "friendCount": 34
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-19T12:55:08.906Z",
+      "lastChangeAt": "2026-09-19T12:55:08.906Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-09-19_19-55-08_change.png"
+    }
   }
 ]

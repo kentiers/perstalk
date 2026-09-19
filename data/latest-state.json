@@ -22,7 +22,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:44:17.241Z",
+    "lastCheckedAt": "2026-09-19T12:54:46.180Z",
     "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-09-19_19-36-59_change.png",
     "lastChangeAt": "2026-09-19T12:36:59.430Z"
   },
@@ -33,7 +33,7 @@
     "nickname": "HANZZZ",
     "bio": "@americano",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=f250fb40&x-expires=1789992000&x-signature=NEAW%2F%2Fd5WY1cRoeuUhgYKxgUb9c%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+    "avatarUrl": "https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=2cce6f72&x-expires=1789992000&x-signature=M3eqtpWAS8XCBdLgQb1luc0KztQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -68,7 +68,7 @@
         "mediaFile": "screenshots/@yukohanz/stories/2026-09-19_story_7686953387497147668_media.jpg"
       }
     ],
-    "lastCheckedAt": "2026-09-19T12:44:21.589Z",
+    "lastCheckedAt": "2026-09-19T12:54:50.731Z",
     "lastBaselineScreenshot": "screenshots/@yukohanz/profile/2026-09-19_18-45-45_baseline.png"
   },
   "yucallhanz_": {
@@ -113,7 +113,7 @@
         "mediaFile": "screenshots/@yucallhanz_/stories/2026-09-19_story_7686954064059321620_media.jpg"
       }
     ],
-    "lastCheckedAt": "2026-09-19T12:44:26.022Z",
+    "lastCheckedAt": "2026-09-19T12:54:55.233Z",
     "lastBaselineScreenshot": "screenshots/@yucallhanz_/profile/2026-09-19_19-09-33_baseline.png"
   },
   "cecilelek2507": {
@@ -139,7 +139,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:44:30.521Z",
+    "lastCheckedAt": "2026-09-19T12:54:59.647Z",
     "lastBaselineScreenshot": "screenshots/@cecilelek2507/profile/2026-09-19_19-09-48_baseline.png"
   },
   "cecil250725": {
@@ -165,7 +165,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:44:34.963Z",
+    "lastCheckedAt": "2026-09-19T12:55:04.255Z",
     "lastBaselineScreenshot": "screenshots/@cecil250725/profile/2026-09-19_19-09-54_baseline.png"
   },
   "saaaaa_180": {
@@ -173,7 +173,7 @@
     "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
     "username": "saaaaa_180",
     "nickname": "lily",
-    "bio": "nyari apa? gada yang jadi selingkuhan disini mah, ga sasimo kaya si onoh🫣",
+    "bio": "",
     "bioLink": "",
     "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/95f7a7b41d5e48a1c32928cbf8ac36b1~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=dc7798b0&x-expires=1789992000&x-signature=LgdrsARZA5bgWmfMxis8IVW81jA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
     "isVerified": false,
@@ -191,7 +191,8 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-09-19T12:44:39.361Z",
-    "lastBaselineScreenshot": "screenshots/@saaaaa_180/profile/2026-09-19_19-09-59_baseline.png"
+    "lastCheckedAt": "2026-09-19T12:55:08.906Z",
+    "lastChangeAt": "2026-09-19T12:55:08.906Z",
+    "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-09-19_19-55-08_change.png"
   }
 }
