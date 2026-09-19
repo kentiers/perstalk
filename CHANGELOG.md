@@ -1,10 +1,10 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **19/09/26, 19.24**
+Terakhir diperiksa: **19/09/26, 19.29**
 
 ## Ringkasan Akun (6 Target)
 
-| Akun | Nama | Bio | Video | Followers | Following | Likes | Story | Tanggal Dicek |
+| Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
 | **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 10 | 68 | 0 | 0 | 19/9/2026 |
 | **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 10 | 1278 | 3 | 1776 | 2 | 19/9/2026 |

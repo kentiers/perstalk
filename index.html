@@ -2,27 +2,27 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Stalk - Pemantau Akun</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0b0c10;
-      --panel: #13141b;
-      --panel-inner: #191b24;
-      --panel-hover: #20222f;
-      --panel-selected: #252837;
-      --border: #282a3a;
-      --border-subtle: #1e202d;
+      --bg: #0b0c11;
+      --panel: #13141c;
+      --panel-inner: #191a26;
+      --panel-hover: #212332;
+      --panel-selected: #282b3d;
+      --border: #2c2f42;
+      --border-subtle: #202230;
       --text: #ffffff;
       --text-muted: #cbd5e1;
-      --text-dim: #9499ab;
+      --text-dim: #9499ad;
       --accent: #38bdf8;
-      --accent-soft: rgba(56, 189, 248, 0.15);
+      --accent-soft: rgba(56, 189, 248, 0.16);
       --positive: #34d399;
-      --positive-soft: rgba(52, 211, 153, 0.15);
+      --positive-soft: rgba(52, 211, 153, 0.16);
       --negative: #fb7185;
       --warning: #fbbf24;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -40,17 +40,19 @@
       flex-direction: column;
     }
 
-    /* Top Bar - Bold & Clear */
+    /* Top Bar */
     .topbar {
       background: var(--panel);
       border-bottom: 1px solid var(--border);
-      padding: 16px 32px;
+      padding: 16px 36px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
       z-index: 100;
+      flex-wrap: wrap;
+      gap: 16px;
     }
     .topbar-left {
       display: flex;
@@ -58,21 +60,21 @@
       gap: 16px;
     }
     .brand-title {
-      font-size: 19px;
+      font-size: 22px;
       font-weight: 800;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
       color: #fff;
     }
     .status-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-size: 13.5px;
+      font-size: 14px;
       color: var(--positive);
       background: var(--positive-soft);
-      padding: 5px 12px;
+      padding: 6px 14px;
       border-radius: 8px;
-      font-weight: 600;
+      font-weight: 700;
     }
     .status-dot {
       width: 8px;
@@ -83,29 +85,32 @@
     .topbar-stats {
       display: flex;
       gap: 28px;
-      font-size: 14.5px;
+      font-size: 15px;
       color: var(--text-muted);
+      align-items: center;
     }
     .topbar-stats strong {
       color: #fff;
-      font-weight: 700;
+      font-weight: 800;
+      font-size: 16px;
     }
     .topbar-sync {
-      font-size: 13.5px;
+      font-size: 14px;
       color: var(--text-dim);
+      font-weight: 500;
     }
 
     /* Workspace Layout */
     .layout-split {
       display: flex;
       flex: 1;
-      height: calc(100dvh - 61px);
+      height: calc(100dvh - 66px);
       overflow: hidden;
     }
 
     /* Left Sidebar: Target Roster */
     .sidebar {
-      width: 360px;
+      width: 370px;
       background: var(--panel);
       border-right: 1px solid var(--border);
       display: flex;
@@ -113,23 +118,23 @@
       flex-shrink: 0;
     }
     .sidebar-header {
-      padding: 18px 24px;
+      padding: 20px 24px;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     .sidebar-title {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text-dim);
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #ffffff;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
     }
     .sidebar-count {
-      font-size: 13.5px;
+      font-size: 14px;
       color: var(--text-muted);
-      font-weight: 600;
+      font-weight: 700;
     }
     .roster-list {
       flex: 1;
@@ -140,7 +145,7 @@
       gap: 8px;
     }
     .roster-card {
-      padding: 14px 18px;
+      padding: 16px 18px;
       border-radius: 12px;
       border: 1px solid transparent;
       cursor: pointer;
@@ -154,12 +159,12 @@
     }
     .roster-card.selected {
       background: var(--panel-selected);
-      border-color: #3b3e52;
+      border-color: #40445c;
     }
     .roster-avatar {
-      width: 52px;
-      height: 52px;
-      border-radius: 12px;
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
       background: #000;
       border: 1px solid var(--border);
       flex-shrink: 0;
@@ -182,35 +187,36 @@
       gap: 8px;
     }
     .roster-handle {
-      font-size: 15.5px;
-      font-weight: 700;
+      font-size: 16.5px;
+      font-weight: 800;
       color: #fff;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
     .roster-story-badge {
-      font-size: 12px;
+      font-size: 12.5px;
       color: var(--accent);
       background: var(--accent-soft);
-      padding: 2px 8px;
+      padding: 3px 9px;
       border-radius: 6px;
-      font-weight: 700;
+      font-weight: 800;
       flex-shrink: 0;
     }
     .roster-stats-line {
       display: flex;
-      gap: 14px;
-      font-size: 13.5px;
-      color: var(--text-dim);
+      gap: 16px;
+      font-size: 14px;
+      color: var(--text-muted);
       margin-top: 5px;
+      font-weight: 500;
     }
     .roster-stats-line strong {
-      color: #cbd5e1;
-      font-weight: 600;
+      color: #ffffff;
+      font-weight: 800;
     }
 
-    /* Main Stage: Inspector View */
+    /* Main Stage */
     .stage {
       flex: 1;
       display: flex;
@@ -219,7 +225,7 @@
       background: var(--bg);
     }
     .stage-top {
-      padding: 32px 40px 28px;
+      padding: 36px 44px 30px;
       border-bottom: 1px solid var(--border);
       background: var(--panel);
     }
@@ -228,17 +234,18 @@
       justify-content: space-between;
       align-items: center;
       gap: 24px;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
+      flex-wrap: wrap;
     }
     .profile-user-left {
       display: flex;
-      gap: 20px;
+      gap: 22px;
       align-items: center;
     }
     .profile-large-avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 18px;
+      width: 84px;
+      height: 84px;
+      border-radius: 20px;
       background: #000;
       border: 1px solid var(--border);
       overflow: hidden;
@@ -254,7 +261,7 @@
       min-width: 0;
     }
     .profile-name {
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 800;
       letter-spacing: -0.025em;
       color: #fff;
@@ -263,37 +270,38 @@
       gap: 10px;
     }
     .profile-link {
-      font-size: 16px;
+      font-size: 16.5px;
       color: var(--accent);
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 6px;
       margin-top: 4px;
-      font-weight: 600;
+      font-weight: 700;
     }
     .profile-link:hover { text-decoration: underline; }
     .profile-actions {
       display: flex;
-      gap: 12px;
+      gap: 14px;
       align-items: center;
+      flex-wrap: wrap;
     }
     .privacy-badge {
-      font-size: 14px;
-      font-weight: 600;
+      font-size: 14.5px;
+      font-weight: 700;
       color: var(--text-muted);
       background: var(--panel-inner);
-      padding: 8px 14px;
+      padding: 10px 16px;
       border-radius: 8px;
       border: 1px solid var(--border);
     }
     .btn-secondary {
       background: #252837;
-      border: 1px solid #3b3e52;
+      border: 1px solid #3e4259;
       color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 9px 18px;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 10px 20px;
       border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
@@ -303,8 +311,8 @@
       transition: background 0.15s;
     }
     .btn-secondary:hover {
-      background: #2f3346;
-      border-color: #4a4e66;
+      background: #31354a;
+      border-color: #515673;
     }
 
     /* Bold Bio Container */
@@ -313,68 +321,67 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 22px 28px;
-      font-size: 17px;
+      font-size: 17.5px;
       line-height: 1.6;
       color: #ffffff;
       font-weight: 500;
       word-break: break-word;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
     .bio-panel.empty {
       color: var(--text-dim);
       font-style: italic;
     }
 
-    /* Bold Metrics Row */
+    /* Metrics Row */
     .metrics-row {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      gap: 18px;
     }
     .metric-card {
       background: var(--panel-inner);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 20px 24px;
     }
     .metric-card-label {
-      font-size: 13.5px;
+      font-size: 14px;
       color: #cbd5e1;
       margin-bottom: 6px;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.01em;
     }
     .metric-card-value {
-      font-size: 38px;
+      font-size: 42px;
       font-weight: 800;
       letter-spacing: -0.03em;
-      color: #ffffff;
+      color: #fff;
     }
 
-    /* Stage Content Body */
+    /* Stage Content */
     .stage-content {
-      padding: 32px 40px;
+      padding: 36px 44px;
       display: grid;
-      grid-template-columns: 360px 1fr;
+      grid-template-columns: 370px 1fr;
       gap: 32px;
     }
 
     .sub-section {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 26px;
     }
     .content-box {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
+      border-radius: 16px;
+      padding: 24px;
     }
     .content-box-title {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text);
+      font-size: 16px;
+      font-weight: 800;
+      color: #ffffff;
       margin-bottom: 16px;
       display: flex;
       justify-content: space-between;
@@ -385,11 +392,11 @@
     .stories-vault {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
+      gap: 14px;
     }
     .story-card-item {
-      height: 140px;
-      border-radius: 10px;
+      height: 145px;
+      border-radius: 12px;
       border: 1px solid var(--border);
       background: #000;
       position: relative;
@@ -411,21 +418,21 @@
       position: absolute;
       bottom: 8px;
       right: 8px;
-      font-size: 11px;
-      background: rgba(0, 0, 0, 0.85);
+      font-size: 11.5px;
+      background: rgba(0, 0, 0, 0.88);
       padding: 3px 8px;
-      border-radius: 6px;
+      border-radius: 5px;
       color: #fff;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
     }
     .empty-story-note {
-      font-size: 14.5px;
-      color: #9499ab;
+      font-size: 15px;
+      color: var(--text-muted);
       padding: 36px 24px;
       text-align: center;
       border: 1px dashed var(--border);
-      border-radius: 10px;
+      border-radius: 12px;
       line-height: 1.6;
       font-weight: 500;
     }
@@ -433,8 +440,8 @@
     /* Snapshot Box */
     .snapshot-thumb-wrapper {
       width: 100%;
-      height: 180px;
-      border-radius: 10px;
+      height: 190px;
+      border-radius: 12px;
       border: 1px solid var(--border);
       background: #000;
       position: relative;
@@ -454,85 +461,91 @@
     }
     .snapshot-thumb-label {
       position: absolute;
-      bottom: 10px;
-      left: 10px;
-      background: rgba(0, 0, 0, 0.9);
-      font-size: 12.5px;
-      font-weight: 600;
-      padding: 4px 10px;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.92);
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 5px 12px;
       border-radius: 6px;
       color: #fff;
     }
 
-    /* Audit Table for Target */
+    /* Table Container */
     .target-history-box {
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: 16px;
       overflow: hidden;
     }
     .target-history-header {
-      padding: 18px 24px;
+      padding: 20px 26px;
       border-bottom: 1px solid var(--border);
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     .target-history-title {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text);
+      font-size: 16px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+    .table-scroll-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
     .data-table {
       width: 100%;
+      min-width: 540px;
       border-collapse: collapse;
-      font-size: 15px;
+      font-size: 15.5px;
     }
     .data-table th {
       background: var(--panel-inner);
-      font-size: 13.5px;
-      color: #cbd5e1;
-      padding: 16px 22px;
+      font-size: 14.5px;
+      color: #ffffff;
+      padding: 16px 24px;
       border-bottom: 1px solid var(--border);
-      font-weight: 700;
+      font-weight: 800;
       text-align: left;
     }
     .data-table td {
-      padding: 18px 22px;
+      padding: 18px 24px;
       border-bottom: 1px solid var(--border-subtle);
       vertical-align: middle;
-      font-size: 15px;
       line-height: 1.6;
-      color: #f1f5f9;
+      color: #ffffff;
+      font-weight: 500;
     }
     .data-table tr:last-child td { border-bottom: none; }
     .data-table tr:hover td { background: var(--panel-hover); }
 
     .tag-badge {
-      font-size: 12px;
-      padding: 4px 10px;
+      font-size: 13px;
+      padding: 5px 12px;
       border-radius: 6px;
       font-weight: 700;
       white-space: nowrap;
       display: inline-block;
     }
-    .tag-badge.change { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+    .tag-badge.change { background: rgba(245, 158, 11, 0.22); color: var(--warning); }
     .tag-badge.story { background: var(--accent-soft); color: var(--accent); }
-    .tag-badge.base { background: rgba(255, 255, 255, 0.1); color: #e2e8f0; }
+    .tag-badge.base { background: rgba(255, 255, 255, 0.12); color: #ffffff; }
 
     .diff-item {
-      font-size: 14px;
-      margin-bottom: 3px;
+      font-size: 15px;
+      margin-bottom: 4px;
     }
-    .diff-label { color: var(--text-muted); font-weight: 600; }
+    .diff-label { color: #cbd5e1; font-weight: 700; }
     .diff-old { color: var(--negative); text-decoration: line-through; margin: 0 6px; }
-    .diff-new { color: var(--positive); font-weight: 700; }
-    .diff-delta { color: var(--accent); font-size: 13px; font-weight: 700; margin-left: 6px; }
+    .diff-new { color: var(--positive); font-weight: 800; }
+    .diff-delta { color: var(--accent); font-size: 14px; font-weight: 800; margin-left: 6px; }
 
     .media-thumb-btn {
-      width: 64px;
-      height: 44px;
-      border-radius: 6px;
+      width: 68px;
+      height: 48px;
+      border-radius: 8px;
       border: 1px solid var(--border);
       background: #000;
       overflow: hidden;
@@ -548,16 +561,16 @@
       display: none;
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.92);
-      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.94);
+      backdrop-filter: blur(14px);
       z-index: 10000;
       justify-content: center;
       align-items: center;
-      padding: 32px;
+      padding: 28px;
     }
     #modal.active { display: flex; }
     .modal-dialog {
-      max-width: 90vw;
+      max-width: 92vw;
       max-height: 90vh;
       display: flex;
       flex-direction: column;
@@ -565,8 +578,8 @@
       position: relative;
     }
     .modal-dialog img {
-      max-width: 88vw;
-      max-height: 82vh;
+      max-width: 90vw;
+      max-height: 80vh;
       border-radius: 12px;
       border: 1px solid var(--border);
       object-fit: contain;
@@ -576,34 +589,155 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      font-size: 14.5px;
-      font-weight: 600;
+      font-size: 15px;
+      font-weight: 700;
       color: #fff;
       align-items: center;
     }
     .modal-close-btn {
       position: absolute;
-      top: -18px;
-      right: -18px;
-      width: 36px;
-      height: 36px;
+      top: 14px;
+      right: 14px;
+      width: 44px;
+      height: 44px;
       border-radius: 50%;
-      background: #252837;
+      background: rgba(30, 32, 45, 0.92);
       border: 1px solid var(--border);
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 20px;
+      z-index: 10001;
     }
 
-    @media (max-width: 1100px) {
-      .stage-content { grid-template-columns: 1fr; }
-      .layout-split { flex-direction: column; height: auto; overflow: visible; }
-      .sidebar { width: 100%; height: 320px; }
-      body { overflow-y: auto; }
-      .metrics-row { grid-template-columns: repeat(2, 1fr); }
+    /* Responsive Mobile & Tablet Overrides */
+    @media (max-width: 1023px) {
+      body {
+        overflow-y: auto;
+      }
+      .topbar {
+        padding: 16px 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+      .topbar-left {
+        justify-content: space-between;
+        width: 100%;
+      }
+      .topbar-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        background: var(--panel-inner);
+        padding: 12px 14px;
+        border-radius: 10px;
+        font-size: 14px;
+        text-align: center;
+      }
+      .topbar-sync {
+        display: none;
+      }
+      .layout-split {
+        flex-direction: column;
+        height: auto;
+        overflow: visible;
+      }
+      /* Horizontal swipeable stories/target selector on mobile */
+      .sidebar {
+        width: 100%;
+        background: #0e0f16;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+      .sidebar-header {
+        padding: 12px 20px;
+      }
+      .roster-list {
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 12px 16px 16px;
+        gap: 12px;
+      }
+      .roster-card {
+        flex-shrink: 0;
+        min-width: 145px;
+        height: 142px;
+        padding: 12px 16px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        gap: 6px;
+      }
+      .roster-card.selected {
+        border-color: var(--accent);
+        background: #1c2233;
+      }
+      .roster-avatar {
+        width: 56px;
+        height: 56px;
+      }
+      .roster-info {
+        width: 100%;
+      }
+      .roster-top-line {
+        flex-direction: column;
+        gap: 4px;
+        min-height: 48px;
+        justify-content: center;
+      }
+      .roster-handle {
+        font-size: 15px;
+      }
+      .roster-stats-line {
+        justify-content: center;
+        gap: 8px;
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+      /* Stage Mobile Layout */
+      .stage {
+        overflow-y: visible;
+      }
+      .stage-top {
+        padding: 24px 20px;
+      }
+      .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      .profile-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .profile-actions .btn-secondary {
+        flex: 1;
+        justify-content: center;
+      }
+      .metrics-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .metric-card {
+        padding: 16px 18px;
+      }
+      .metric-card-value {
+        font-size: 32px;
+      }
+      .stage-content {
+        padding: 24px 20px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
     }
   </style>
 </head>
@@ -615,18 +749,18 @@
       <span class="status-badge"><span class="status-dot"></span> <span id="target-count-badge">6 Target Dipantau</span></span>
     </div>
     <div class="topbar-stats">
-      <span>Total Video: <strong id="sum-videos">0</strong></span>
-      <span>Followers: <strong id="sum-followers">0</strong></span>
-      <span>Story Aktif: <strong id="sum-stories" style="color:var(--accent)">0</strong></span>
+      <span>Video: <strong id="sum-videos">0</strong></span>
+      <span>Pengikut: <strong id="sum-followers">0</strong></span>
+      <span>Story: <strong id="sum-stories" style="color:var(--accent)">0</strong></span>
     </div>
     <div class="topbar-sync">
-      <span>Terakhir dicek: 19/09/26, 19.24</span>
+      <span>Terakhir dicek: 19/09/26, 19.29</span>
     </div>
   </header>
 
   <!-- Split Workspace -->
   <div class="layout-split">
-    <!-- Left Roster -->
+    <!-- Target Roster (Sidebar on Desktop, Horizontal Swipe on Mobile) -->
     <aside class="sidebar">
       <div class="sidebar-header">
         <span class="sidebar-title">Daftar Akun</span>
@@ -723,7 +857,7 @@
     function renderStage() {
       const stage = document.getElementById('stage-container');
       if (!selectedUser || !accounts[selectedUser]) {
-        stage.innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-dim);font-size:16px;">Pilih akun di panel kiri.</div>';
+        stage.innerHTML = '<div style="padding:40px;text-align:center;color:var(--text-dim);font-size:16px;">Pilih akun di daftar.</div>';
         return;
       }
 
@@ -768,7 +902,7 @@
           if (item.eventType === 'INITIAL_BASELINE') {
             detail = '<span style="color:#cbd5e1;">Perekaman status profil awal ke sistem.</span>';
           } else if (item.eventType === 'NEW_STORY' && item.story) {
-            detail = `Story: "${escapeHtml(item.story.desc || 'Tanpa teks')}" <a href="${item.story.url}" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:600;margin-left:6px;">[Buka Link]</a>`;
+            detail = `Story: "${escapeHtml(item.story.desc || 'Tanpa teks')}" <a href="${item.story.url}" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:700;margin-left:6px;">[Buka Link]</a>`;
           } else if (item.changes && item.changes.length > 0) {
             detail = item.changes.map(c => {
               const delta = c.diff !== undefined ? ` <span class="diff-delta">(${c.diff > 0 ? '+' : ''}${c.diff})</span>` : '';
@@ -819,7 +953,7 @@
                 </div>
                 <a class="profile-link" href="https://www.tiktok.com/@${selectedUser}" target="_blank">
                   <span>@${selectedUser}</span>
-                  <span style="font-size:13px;">↗</span>
+                  <span style="font-size:14px;">↗</span>
                 </a>
               </div>
             </div>
@@ -841,19 +975,19 @@
 
           <div class="metrics-row">
             <div class="metric-card">
-              <div class="metric-card-label">Jumlah Video</div>
+              <div class="metric-card-label">Video</div>
               <div class="metric-card-value">${stats.videoCount ?? 0}</div>
             </div>
             <div class="metric-card">
-              <div class="metric-card-label">Pengikut (Followers)</div>
+              <div class="metric-card-label">Pengikut</div>
               <div class="metric-card-value">${Number(stats.followerCount ?? 0).toLocaleString('id-ID')}</div>
             </div>
             <div class="metric-card">
-              <div class="metric-card-label">Mengikuti (Following)</div>
+              <div class="metric-card-label">Mengikuti</div>
               <div class="metric-card-value">${Number(stats.followingCount ?? 0).toLocaleString('id-ID')}</div>
             </div>
             <div class="metric-card">
-              <div class="metric-card-label">Total Suka (Likes)</div>
+              <div class="metric-card-label">Suka</div>
               <div class="metric-card-value">${Number(stats.heartCount ?? 0).toLocaleString('id-ID')}</div>
             </div>
           </div>
@@ -882,9 +1016,9 @@
           <div class="target-history-box">
             <div class="target-history-header">
               <span class="target-history-title">Riwayat Perubahan Akun</span>
-              <span style="font-size:13.5px;color:var(--text-muted);font-weight:600;">${userEvents.length} Peristiwa</span>
+              <span style="font-size:14.5px;color:#cbd5e1;font-weight:700;">${userEvents.length} Peristiwa</span>
             </div>
-            <div style="overflow-x:auto;">
+            <div class="table-scroll-wrap">
               <table class="data-table">
                 <thead>
                   <tr>
