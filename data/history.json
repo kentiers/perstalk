@@ -502,5 +502,103 @@
       "lastChangeAt": "2026-09-19T18:55:52.903Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-09-20_01-55-52_change.png"
     }
+  },
+  {
+    "id": "evt_1789865718882_w5rpv",
+    "timestamp": "2026-09-20T00:55:17.708Z",
+    "username": "cecil2507",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Mengikuti (Following))",
+    "changes": [
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 69,
+        "newValue": 68,
+        "diff": -1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@cecil2507/profile/2026-09-20_07-55-17_change.png",
+    "snapshot": {
+      "userId": "7686209623263429653",
+      "secUid": "MS4wLjABAAAA9CJz5qbn2y_YuUg3v8G5ev5Nz6QKbMIDm1V-YfytzvGd00ubZgq2cbgsjGjT4ykr",
+      "username": "cecil2507",
+      "nickname": "caca",
+      "bio": "seumur hidup Lo gabakal tenang, karma pasti bakal dateng",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/a9ccee6edf95e18d11457c11289ac026~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=c11d1800&x-expires=1790035200&x-signature=KRHDcYAXoWiK6Tphx7yiVHcdblY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 8,
+        "followingCount": 68,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 7
+      },
+      "uniqueIdModifyTime": 1789585291,
+      "nickNameModifyTime": 1789585172,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-20T00:55:17.708Z",
+      "lastChangeAt": "2026-09-20T00:55:17.708Z",
+      "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-09-20_07-55-17_change.png"
+    }
+  },
+  {
+    "id": "evt_1789865724212_smaet",
+    "timestamp": "2026-09-20T00:55:23.422Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "2 perubahan terdeteksi (Jumlah Video / Post (Postingan Dihapus (-3)), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "videoCount",
+        "label": "Jumlah Video / Post (Postingan Dihapus (-3))",
+        "oldValue": 10,
+        "newValue": 7,
+        "diff": -3,
+        "isSignificant": true
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1776,
+        "newValue": 1775,
+        "diff": -1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-09-20_07-55-23_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=b57a473a&x-expires=1790035200&x-signature=ay4j86g7u8APm5ixCGZdfEurcdU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1278,
+        "followingCount": 3,
+        "heartCount": 1775,
+        "videoCount": 7,
+        "diggCount": 7782,
+        "friendCount": 3
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-20T00:55:23.422Z",
+      "lastChangeAt": "2026-09-20T00:55:23.422Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-09-20_07-55-23_change.png"
+    }
   }
 ]
