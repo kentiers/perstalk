@@ -1,21 +1,70 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **22/09/26, 05.33**
+Terakhir diperiksa: **23/09/26, 05.22**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 8 | 69 | 0 | 0 | 22/9/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 7 | 1278 | 4 | 1771 | 0 | 22/9/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 22/9/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 22/9/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 22/9/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 523 | 36 | 6466 | 0 | 22/9/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 9 | 69 | 0 | 0 | 23/9/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 7 | 1278 | 4 | 1772 | 0 | 23/9/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 23/9/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 23/9/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 23/9/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 521 | 35 | 6466 | 3 | 23/9/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 23/09/26, 05.21 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "523" &rarr; "521" (-2)
+- Jumlah Mengikuti (Following): "36" &rarr; "35" (-1)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-09-23_05-21-51_change.png`](screenshots/@saaaaa_180/profile/2026-09-23_05-21-51_change.png)
+
+---
+
+### 23/09/26, 05.22 - @saaaaa_180 (NEW_STORY)
+
+- Story: "Tanpa teks" ([Buka link](https://www.tiktok.com/@saaaaa_180/photo/7688380410333531412))
+
+Berkas: [`screenshots/@saaaaa_180/stories/2026-09-23_story_7688380410333531412.png`](screenshots/@saaaaa_180/stories/2026-09-23_story_7688380410333531412.png)
+
+---
+
+### 23/09/26, 05.21 - @saaaaa_180 (NEW_STORY)
+
+- Story: "Tanpa teks" ([Buka link](https://www.tiktok.com/@saaaaa_180/photo/7688380038290378005))
+
+Berkas: [`screenshots/@saaaaa_180/stories/2026-09-23_story_7688380038290378005.png`](screenshots/@saaaaa_180/stories/2026-09-23_story_7688380038290378005.png)
+
+---
+
+### 23/09/26, 05.21 - @saaaaa_180 (NEW_STORY)
+
+- Story: "Tanpa teks" ([Buka link](https://www.tiktok.com/@saaaaa_180/photo/7688379112091634965))
+
+Berkas: [`screenshots/@saaaaa_180/stories/2026-09-23_story_7688379112091634965.png`](screenshots/@saaaaa_180/stories/2026-09-23_story_7688379112091634965.png)
+
+---
+
+### 23/09/26, 05.21 - @yukohanz (PROFILE_CHANGED)
+
+- Total Suka (Likes): "1771" &rarr; "1772" (+1)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-09-23_05-21-33_change.png`](screenshots/@yukohanz/profile/2026-09-23_05-21-33_change.png)
+
+---
+
+### 23/09/26, 05.21 - @cecil2507 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "8" &rarr; "9" (+1)
+
+Berkas: [`screenshots/@cecil2507/profile/2026-09-23_05-21-28_change.png`](screenshots/@cecil2507/profile/2026-09-23_05-21-28_change.png)
+
+---
 
 ### 22/09/26, 05.33 - @saaaaa_180 (PROFILE_CHANGED)
 
