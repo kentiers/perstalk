@@ -1,21 +1,30 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **23/09/26, 05.22**
+Terakhir diperiksa: **24/09/26, 05.36**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 9 | 69 | 0 | 0 | 23/9/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 7 | 1278 | 4 | 1772 | 0 | 23/9/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 23/9/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 23/9/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 23/9/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 521 | 35 | 6466 | 3 | 23/9/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 9 | 69 | 0 | 0 | 24/9/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 7 | 1277 | 4 | 1776 | 0 | 24/9/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 24/9/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 24/9/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 24/9/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 521 | 35 | 6466 | 0 | 24/9/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 24/09/26, 05.36 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1278" &rarr; "1277" (-1)
+- Total Suka (Likes): "1772" &rarr; "1776" (+4)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-09-24_05-36-06_change.png`](screenshots/@yukohanz/profile/2026-09-24_05-36-06_change.png)
+
+---
 
 ### 23/09/26, 05.21 - @saaaaa_180 (PROFILE_CHANGED)
 

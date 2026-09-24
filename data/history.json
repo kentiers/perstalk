@@ -1276,5 +1276,62 @@
       "lastChangeAt": "2026-09-23T05:21:51.858Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-09-23_05-21-51_change.png"
     }
+  },
+  {
+    "id": "evt_1790228166720_uwiok",
+    "timestamp": "2026-09-24T05:36:06.070Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "2 perubahan terdeteksi (Jumlah Pengikut (Followers), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1278,
+        "newValue": 1277,
+        "diff": -1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1772,
+        "newValue": 1776,
+        "diff": 4,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-09-24_05-36-06_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=8523d3b0&x-expires=1790398800&x-signature=RxvyeomVAkoiSs8bp386hGtA2YE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1277,
+        "followingCount": 4,
+        "heartCount": 1776,
+        "videoCount": 7,
+        "diggCount": 7861,
+        "friendCount": 3
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-24T05:36:06.070Z",
+      "lastChangeAt": "2026-09-24T05:36:06.070Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-09-24_05-36-06_change.png"
+    }
   }
 ]
