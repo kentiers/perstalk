@@ -1,21 +1,46 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **24/09/26, 05.36**
+Terakhir diperiksa: **25/09/26, 05.33**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "seumur hidup Lo gabakal tenang, " | 0 | 9 | 69 | 0 | 0 | 24/9/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 7 | 1277 | 4 | 1776 | 0 | 24/9/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 24/9/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 24/9/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 24/9/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 521 | 35 | 6466 | 0 | 24/9/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 9 | 69 | 0 | 0 | 25/9/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 7 | 1277 | 4 | 1772 | 0 | 25/9/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 25/9/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 25/9/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 25/9/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 520 | 35 | 6466 | 0 | 25/9/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 25/09/26, 05.33 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "521" &rarr; "520" (-1)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-09-25_05-33-29_change.png`](screenshots/@saaaaa_180/profile/2026-09-25_05-33-29_change.png)
+
+---
+
+### 25/09/26, 05.33 - @yukohanz (PROFILE_CHANGED)
+
+- Total Suka (Likes): "1776" &rarr; "1772" (-4)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-09-25_05-33-11_change.png`](screenshots/@yukohanz/profile/2026-09-25_05-33-11_change.png)
+
+---
+
+### 25/09/26, 05.33 - @cecil2507 (PROFILE_CHANGED)
+
+- Bio / Signature: "seumur hidup Lo gabakal tenang, karma pasti bakal dateng" &rarr; ""
+- Foto Profil (Avatar): "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/a9ccee6edf95e18d11457c11289ac026~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=0062b09c&x-expires=1790398800&x-signature=4a1lxCEGaGjkLS3JnyFZvhOBL6E%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5" &rarr; "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=f6bf1a3e&x-expires=1790485200&x-signature=E0eM%2BYYFiAwpzWpJD%2FOURhexS9Y%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8"
+
+Berkas: [`screenshots/@cecil2507/profile/2026-09-25_05-33-05_change.png`](screenshots/@cecil2507/profile/2026-09-25_05-33-05_change.png)
+
+---
 
 ### 24/09/26, 05.36 - @yukohanz (PROFILE_CHANGED)
 

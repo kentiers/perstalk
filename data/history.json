@@ -1333,5 +1333,153 @@
       "lastChangeAt": "2026-09-24T05:36:06.070Z",
       "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-09-24_05-36-06_change.png"
     }
+  },
+  {
+    "id": "evt_1790314386670_nmlpu",
+    "timestamp": "2026-09-25T05:33:05.978Z",
+    "username": "cecil2507",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "2 perubahan terdeteksi (Bio / Signature, Foto Profil (Avatar))",
+    "changes": [
+      {
+        "field": "bio",
+        "label": "Bio / Signature",
+        "oldValue": "seumur hidup Lo gabakal tenang, karma pasti bakal dateng",
+        "newValue": "",
+        "isSignificant": true
+      },
+      {
+        "field": "avatarUrl",
+        "label": "Foto Profil (Avatar)",
+        "oldValue": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/a9ccee6edf95e18d11457c11289ac026~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=0062b09c&x-expires=1790398800&x-signature=4a1lxCEGaGjkLS3JnyFZvhOBL6E%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+        "newValue": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=f6bf1a3e&x-expires=1790485200&x-signature=E0eM%2BYYFiAwpzWpJD%2FOURhexS9Y%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+        "isSignificant": true
+      }
+    ],
+    "screenshot": "screenshots/@cecil2507/profile/2026-09-25_05-33-05_change.png",
+    "snapshot": {
+      "userId": "7686209623263429653",
+      "secUid": "MS4wLjABAAAA9CJz5qbn2y_YuUg3v8G5ev5Nz6QKbMIDm1V-YfytzvGd00ubZgq2cbgsjGjT4ykr",
+      "username": "cecil2507",
+      "nickname": "caca",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=f6bf1a3e&x-expires=1790485200&x-signature=E0eM%2BYYFiAwpzWpJD%2FOURhexS9Y%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 9,
+        "followingCount": 69,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 8
+      },
+      "uniqueIdModifyTime": 1789585291,
+      "nickNameModifyTime": 1789585172,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-25T05:33:05.978Z",
+      "lastChangeAt": "2026-09-25T05:33:05.978Z",
+      "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-09-25_05-33-05_change.png"
+    }
+  },
+  {
+    "id": "evt_1790314391902_k2bit",
+    "timestamp": "2026-09-25T05:33:11.247Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1776,
+        "newValue": 1772,
+        "diff": -4,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-09-25_05-33-11_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=413c0317&x-expires=1790485200&x-signature=SL%2FzaVgKiae9B16oplDNuibi69A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1277,
+        "followingCount": 4,
+        "heartCount": 1772,
+        "videoCount": 7,
+        "diggCount": 7864,
+        "friendCount": 3
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-25T05:33:11.247Z",
+      "lastChangeAt": "2026-09-25T05:33:11.247Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-09-25_05-33-11_change.png"
+    }
+  },
+  {
+    "id": "evt_1790314410250_b5ror",
+    "timestamp": "2026-09-25T05:33:29.600Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Pengikut (Followers))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 521,
+        "newValue": 520,
+        "diff": -1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-09-25_05-33-29_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/a464aa9509387fdd9ee8cbc88fd35077~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=2af04d32&x-expires=1790485200&x-signature=jYG4VlYyn%2FDIu1QweQz%2FuNoMsYE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 520,
+        "followingCount": 35,
+        "heartCount": 6466,
+        "videoCount": 10,
+        "diggCount": 0,
+        "friendCount": 33
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 0,
+      "playlists": [
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-09-25T05:33:29.600Z",
+      "lastChangeAt": "2026-09-25T05:33:29.600Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-09-25_05-33-29_change.png"
+    }
   }
 ]
