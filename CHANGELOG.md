@@ -1,21 +1,38 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **30/09/26, 06.06**
+Terakhir diperiksa: **01/10/26, 06.40**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 9 | 69 | 0 | 0 | 30/9/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 8 | 1277 | 3 | 1793 | 1 | 30/9/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 30/9/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 30/9/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 30/9/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 519 | 36 | 6470 | 0 | 30/9/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 9 | 69 | 0 | 0 | 1/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 8 | 1276 | 3 | 1800 | 1 | 1/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 1/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 1/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 1/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 519 | 36 | 6470 | 0 | 1/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 01/10/26, 06.39 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1277" &rarr; "1276" (-1)
+- Total Suka (Likes): "1793" &rarr; "1800" (+7)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-01_06-39-36_change.png`](screenshots/@yukohanz/profile/2026-10-01_06-39-36_change.png)
+
+---
+
+### 01/10/26, 06.39 - @yukohanz (NEW_STORY)
+
+- Story: "Tanpa teks" ([Buka link](https://www.tiktok.com/@yukohanz/video/7691521498095308053))
+
+Berkas: [`screenshots/@yukohanz/stories/2026-10-01_story_7691521498095308053.png`](screenshots/@yukohanz/stories/2026-10-01_story_7691521498095308053.png)
+
+---
 
 ### 30/09/26, 06.06 - @saaaaa_180 (PROFILE_CHANGED)
 
