@@ -1,21 +1,30 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **04/10/26, 06.29**
+Terakhir diperiksa: **05/10/26, 06.23**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 4/10/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 8 | 1275 | 3 | 1803 | 0 | 4/10/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 4/10/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 4/10/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 4/10/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 518 | 35 | 6470 | 3 | 4/10/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 5/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 8 | 1275 | 4 | 1808 | 0 | 5/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 5/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 5/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 5/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 518 | 35 | 6470 | 0 | 5/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 05/10/26, 06.23 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Mengikuti (Following): "3" &rarr; "4" (+1)
+- Total Suka (Likes): "1803" &rarr; "1808" (+5)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-05_06-23-08_change.png`](screenshots/@yukohanz/profile/2026-10-05_06-23-08_change.png)
+
+---
 
 ### 04/10/26, 06.29 - @saaaaa_180 (NEW_STORY)
 
