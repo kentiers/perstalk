@@ -1,21 +1,54 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **05/10/26, 06.23**
+Terakhir diperiksa: **06/10/26, 06.58**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 5/10/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 8 | 1275 | 4 | 1808 | 0 | 5/10/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 5/10/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 5/10/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 5/10/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 518 | 35 | 6470 | 0 | 5/10/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 6/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 8 | 1274 | 4 | 1809 | 1 | 6/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 6/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 6/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 6/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 518 | 35 | 6470 | 0 | 6/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 06/10/26, 06.58 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Foto Profil (Avatar): "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/a464aa9509387fdd9ee8cbc88fd35077~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4372a03d&x-expires=1791352800&x-signature=vt2jewfcHcHPP%2F1zA1j%2BBQsFd4M%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5" &rarr; "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=497976e8&x-expires=1791439200&x-signature=LkU94qq3Hc2uowbH4x3I6IZWB8I%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5"
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-10-06_06-58-41_change.png`](screenshots/@saaaaa_180/profile/2026-10-06_06-58-41_change.png)
+
+---
+
+### 06/10/26, 06.58 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1275" &rarr; "1274" (-1)
+- Total Suka (Likes): "1808" &rarr; "1809" (+1)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-06_06-58-13_change.png`](screenshots/@yukohanz/profile/2026-10-06_06-58-13_change.png)
+
+---
+
+### 06/10/26, 06.58 - @yukohanz (NEW_STORY)
+
+- Story: "Tanpa teks" ([Buka link](https://www.tiktok.com/@yukohanz/video/7693075311180746004))
+
+Berkas: [`screenshots/@yukohanz/stories/2026-10-06_story_7693075311180746004.png`](screenshots/@yukohanz/stories/2026-10-06_story_7693075311180746004.png)
+
+---
+
+### 06/10/26, 06.58 - @cecil2507 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "11" &rarr; "12" (+1)
+
+Berkas: [`screenshots/@cecil2507/profile/2026-10-06_06-58-07_change.png`](screenshots/@cecil2507/profile/2026-10-06_06-58-07_change.png)
+
+---
 
 ### 05/10/26, 06.23 - @yukohanz (PROFILE_CHANGED)
 
