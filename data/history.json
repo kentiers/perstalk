@@ -3154,5 +3154,105 @@
       "lastChangeAt": "2026-10-08T06:45:58.153Z",
       "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-08_06-45-58_change.png"
     }
+  },
+  {
+    "id": "evt_story_7694519790408404244_1791528857622",
+    "timestamp": "2026-10-09T06:54:17.622Z",
+    "username": "yukohanz",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @yukohanz",
+    "story": {
+      "id": "7694519790408404244",
+      "desc": "",
+      "createTime": 1791520002,
+      "mediaType": "video",
+      "url": "https://www.tiktok.com/@yukohanz/video/7694519790408404244",
+      "screenshot": "screenshots/@yukohanz/stories/2026-10-09_story_7694519790408404244.png",
+      "mediaFile": "screenshots/@yukohanz/stories/2026-10-09_story_7694519790408404244_media.mp4"
+    },
+    "screenshot": "screenshots/@yukohanz/stories/2026-10-09_story_7694519790408404244.png"
+  },
+  {
+    "id": "evt_1791528858285_dxdxg",
+    "timestamp": "2026-10-09T06:54:11.824Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "4 perubahan terdeteksi (Jumlah Video / Post (Postingan Baru (+1)), Jumlah Pengikut (Followers), Jumlah Mengikuti (Following), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "videoCount",
+        "label": "Jumlah Video / Post (Postingan Baru (+1))",
+        "oldValue": 11,
+        "newValue": 12,
+        "diff": 1,
+        "isSignificant": true
+      },
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1275,
+        "newValue": 1276,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 4,
+        "newValue": 3,
+        "diff": -1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1816,
+        "newValue": 1818,
+        "diff": 2,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-10-09_06-54-11_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=e0ac4e26&x-expires=1791698400&x-signature=4HZOGjzB0uOl5h7WEfl1OwYqSO8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1276,
+        "followingCount": 3,
+        "heartCount": 1818,
+        "videoCount": 12,
+        "diggCount": 7912,
+        "friendCount": 3
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 1,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [
+        {
+          "id": "7694519790408404244",
+          "desc": "",
+          "createTime": 1791520002,
+          "mediaType": "video",
+          "url": "https://www.tiktok.com/@yukohanz/video/7694519790408404244",
+          "screenshot": "screenshots/@yukohanz/stories/2026-10-09_story_7694519790408404244.png",
+          "mediaFile": "screenshots/@yukohanz/stories/2026-10-09_story_7694519790408404244_media.mp4"
+        }
+      ],
+      "lastCheckedAt": "2026-10-09T06:54:11.824Z",
+      "lastChangeAt": "2026-10-09T06:54:11.824Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-09_06-54-11_change.png"
+    }
   }
 ]
