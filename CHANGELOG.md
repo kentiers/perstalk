@@ -1,21 +1,31 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **10/10/26, 06.30**
+Terakhir diperiksa: **11/10/26, 06.36**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 10/10/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 13 | 1278 | 3 | 1828 | 1 | 10/10/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 10/10/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 10/10/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 10/10/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 517 | 35 | 6470 | 0 | 10/10/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 11/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 14 | 1276 | 3 | 1825 | 0 | 11/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 11/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 11/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 11/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 517 | 35 | 6470 | 0 | 11/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 11/10/26, 06.35 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Video / Post (Postingan Baru (+1)): "13" &rarr; "14" (+1)
+- Jumlah Pengikut (Followers): "1278" &rarr; "1276" (-2)
+- Total Suka (Likes): "1828" &rarr; "1825" (-3)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-11_06-35-49_change.png`](screenshots/@yukohanz/profile/2026-10-11_06-35-49_change.png)
+
+---
 
 ### 10/10/26, 06.30 - @yukohanz (PROFILE_CHANGED)
 
