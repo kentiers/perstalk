@@ -3411,5 +3411,110 @@
       "lastChangeAt": "2026-10-11T06:35:49.935Z",
       "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-11_06-35-49_change.png"
     }
+  },
+  {
+    "id": "evt_1791875488096_kgjvn",
+    "timestamp": "2026-10-13T07:11:27.441Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "2 perubahan terdeteksi (Jumlah Pengikut (Followers), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1276,
+        "newValue": 1273,
+        "diff": -3,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1825,
+        "newValue": 1830,
+        "diff": 5,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-10-13_07-11-27_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=d2214eb3&x-expires=1792047600&x-signature=LwCN6t8yqKJWfsmLCIPYMJCZAig%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1273,
+        "followingCount": 3,
+        "heartCount": 1830,
+        "videoCount": 14,
+        "diggCount": 7933,
+        "friendCount": 3
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-10-13T07:11:27.441Z",
+      "lastChangeAt": "2026-10-13T07:11:27.441Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-13_07-11-27_change.png"
+    }
+  },
+  {
+    "id": "evt_1791875506216_vsirb",
+    "timestamp": "2026-10-13T07:11:45.568Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Pengikut (Followers))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 517,
+        "newValue": 515,
+        "diff": -2,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-10-13_07-11-45_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=ea593d3b&x-expires=1792047600&x-signature=%2BqLJEY1%2FNhrNPjgNty%2BO51VrjcY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 515,
+        "followingCount": 35,
+        "heartCount": 6470,
+        "videoCount": 10,
+        "diggCount": 0,
+        "friendCount": 33
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 0,
+      "playlists": [
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-10-13T07:11:45.568Z",
+      "lastChangeAt": "2026-10-13T07:11:45.568Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-13_07-11-45_change.png"
+    }
   }
 ]
