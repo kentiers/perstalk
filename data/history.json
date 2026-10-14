@@ -3516,5 +3516,70 @@
       "lastChangeAt": "2026-10-13T07:11:45.568Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-13_07-11-45_change.png"
     }
+  },
+  {
+    "id": "evt_1791956079059_er7gw",
+    "timestamp": "2026-10-14T05:34:38.416Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "3 perubahan terdeteksi (Jumlah Pengikut (Followers), Jumlah Mengikuti (Following), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1273,
+        "newValue": 1274,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 3,
+        "newValue": 4,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1830,
+        "newValue": 1831,
+        "diff": 1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-10-14_05-34-38_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4de398f8&x-expires=1792126800&x-signature=hXRD6XuD1Sy2WLiJx05Nl8Jk9kg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1274,
+        "followingCount": 4,
+        "heartCount": 1831,
+        "videoCount": 14,
+        "diggCount": 7954,
+        "friendCount": 4
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-10-14T05:34:38.416Z",
+      "lastChangeAt": "2026-10-14T05:34:38.416Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-14_05-34-38_change.png"
+    }
   }
 ]

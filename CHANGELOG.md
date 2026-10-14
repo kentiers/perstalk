@@ -1,21 +1,31 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **13/10/26, 07.11**
+Terakhir diperiksa: **14/10/26, 05.34**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 13/10/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 14 | 1273 | 3 | 1830 | 0 | 13/10/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 13/10/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 13/10/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 13/10/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 515 | 35 | 6470 | 0 | 13/10/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 14/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 14 | 1274 | 4 | 1831 | 0 | 14/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 14/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 14/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 14/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 515 | 35 | 6470 | 0 | 14/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 14/10/26, 05.34 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1273" &rarr; "1274" (+1)
+- Jumlah Mengikuti (Following): "3" &rarr; "4" (+1)
+- Total Suka (Likes): "1830" &rarr; "1831" (+1)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-14_05-34-38_change.png`](screenshots/@yukohanz/profile/2026-10-14_05-34-38_change.png)
+
+---
 
 ### 13/10/26, 07.11 - @saaaaa_180 (PROFILE_CHANGED)
 
