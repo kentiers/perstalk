@@ -1,21 +1,30 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **15/10/26, 05.22**
+Terakhir diperiksa: **16/10/26, 05.14**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 15/10/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 15 | 1274 | 5 | 1827 | 0 | 15/10/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 15/10/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 15/10/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 15/10/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 515 | 35 | 6470 | 0 | 15/10/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 16/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 15 | 1273 | 5 | 1831 | 0 | 16/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 16/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 1 | 0 | 0 | 0 | 16/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 16/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 515 | 35 | 6470 | 0 | 16/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 16/10/26, 05.14 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1274" &rarr; "1273" (-1)
+- Total Suka (Likes): "1827" &rarr; "1831" (+4)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-16_05-14-11_change.png`](screenshots/@yukohanz/profile/2026-10-16_05-14-11_change.png)
+
+---
 
 ### 15/10/26, 05.22 - @yukohanz (PROFILE_CHANGED)
 
