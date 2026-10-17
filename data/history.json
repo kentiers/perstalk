@@ -3703,5 +3703,95 @@
       "lastChangeAt": "2026-10-16T05:14:11.262Z",
       "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-16_05-14-11_change.png"
     }
+  },
+  {
+    "id": "evt_1792213753943_iwwxx",
+    "timestamp": "2026-10-17T05:09:13.300Z",
+    "username": "cecil2507",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Pengikut (Followers))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 12,
+        "newValue": 11,
+        "diff": -1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@cecil2507/profile/2026-10-17_05-09-13_change.png",
+    "snapshot": {
+      "userId": "7686209623263429653",
+      "secUid": "MS4wLjABAAAA9CJz5qbn2y_YuUg3v8G5ev5Nz6QKbMIDm1V-YfytzvGd00ubZgq2cbgsjGjT4ykr",
+      "username": "cecil2507",
+      "nickname": "caca",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=2fe287d2&x-expires=1792386000&x-signature=vQGN8b%2BIuJG%2FaIQQjzgXG6d9M9c%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 11,
+        "followingCount": 69,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 10
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789585172,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-10-17T05:09:13.300Z",
+      "lastChangeAt": "2026-10-17T05:09:13.300Z",
+      "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-10-17_05-09-13_change.png"
+    }
+  },
+  {
+    "id": "evt_1792213767792_0pqfo",
+    "timestamp": "2026-10-17T05:09:27.160Z",
+    "username": "cecilelek2507",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Pengikut (Followers))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1,
+        "newValue": 0,
+        "diff": -1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@cecilelek2507/profile/2026-10-17_05-09-27_change.png",
+    "snapshot": {
+      "userId": "7685688151884596245",
+      "secUid": "MS4wLjABAAAAKC_BTjkgzisE8Lp1HmFS7MlUJhDLwfn3x68PrId_FI3BKheoHb4md7l2mqiRe-o4",
+      "username": "cecilelek2507",
+      "nickname": "yuko",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/652b37f2fbed88f79a8ec8c9ee91c071~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4a7398a6&x-expires=1792386000&x-signature=FxMwTBQBtMMGPKCFexu0F29AHTA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 0,
+        "followingCount": 0,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 0
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789463759,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-10-17T05:09:27.160Z",
+      "lastChangeAt": "2026-10-17T05:09:27.160Z",
+      "lastChangeScreenshot": "screenshots/@cecilelek2507/profile/2026-10-17_05-09-27_change.png"
+    }
   }
 ]
