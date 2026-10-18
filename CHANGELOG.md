@@ -1,21 +1,38 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **17/10/26, 05.09**
+Terakhir diperiksa: **18/10/26, 05.14**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 17/10/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 15 | 1273 | 5 | 1831 | 0 | 17/10/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 17/10/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 17/10/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 17/10/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 515 | 35 | 6470 | 0 | 17/10/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 18/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 15 | 1272 | 3 | 1831 | 0 | 18/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 18/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 18/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 18/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 10 | 517 | 35 | 6470 | 0 | 18/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 18/10/26, 05.14 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "515" &rarr; "517" (+2)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-10-18_05-14-56_change.png`](screenshots/@saaaaa_180/profile/2026-10-18_05-14-56_change.png)
+
+---
+
+### 18/10/26, 05.14 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1273" &rarr; "1272" (-1)
+- Jumlah Mengikuti (Following): "5" &rarr; "3" (-2)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-18_05-14-36_change.png`](screenshots/@yukohanz/profile/2026-10-18_05-14-36_change.png)
+
+---
 
 ### 17/10/26, 05.09 - @cecilelek2507 (PROFILE_CHANGED)
 
