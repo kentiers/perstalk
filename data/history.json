@@ -3895,5 +3895,104 @@
       "lastChangeAt": "2026-10-18T05:14:56.025Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-18_05-14-56_change.png"
     }
+  },
+  {
+    "id": "evt_story_7697950166699003157_1792387591028",
+    "timestamp": "2026-10-19T05:26:31.028Z",
+    "username": "yukohanz",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @yukohanz",
+    "story": {
+      "id": "7697950166699003157",
+      "desc": "",
+      "createTime": 1792318698,
+      "mediaType": "photo",
+      "url": "https://www.tiktok.com/@yukohanz/photo/7697950166699003157",
+      "screenshot": "screenshots/@yukohanz/stories/2026-10-19_story_7697950166699003157.png",
+      "mediaFile": "screenshots/@yukohanz/stories/2026-10-19_story_7697950166699003157_media.jpg"
+    },
+    "screenshot": "screenshots/@yukohanz/stories/2026-10-19_story_7697950166699003157.png"
+  },
+  {
+    "id": "evt_story_7697973224176356660_1792387596226",
+    "timestamp": "2026-10-19T05:26:36.226Z",
+    "username": "yukohanz",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @yukohanz",
+    "story": {
+      "id": "7697973224176356660",
+      "desc": "",
+      "createTime": 1792324065,
+      "mediaType": "video",
+      "url": "https://www.tiktok.com/@yukohanz/video/7697973224176356660",
+      "screenshot": "screenshots/@yukohanz/stories/2026-10-19_story_7697973224176356660.png",
+      "mediaFile": "screenshots/@yukohanz/stories/2026-10-19_story_7697973224176356660_media.mp4"
+    },
+    "screenshot": "screenshots/@yukohanz/stories/2026-10-19_story_7697973224176356660.png"
+  },
+  {
+    "id": "evt_story_7697994955704339732_1792387601038",
+    "timestamp": "2026-10-19T05:26:41.038Z",
+    "username": "yukohanz",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @yukohanz",
+    "story": {
+      "id": "7697994955704339732",
+      "desc": "",
+      "createTime": 1792329125,
+      "mediaType": "video",
+      "url": "https://www.tiktok.com/@yukohanz/video/7697994955704339732",
+      "screenshot": "screenshots/@yukohanz/stories/2026-10-19_story_7697994955704339732.png",
+      "mediaFile": "screenshots/@yukohanz/stories/2026-10-19_story_7697994955704339732_media.mp4"
+    },
+    "screenshot": "screenshots/@yukohanz/stories/2026-10-19_story_7697994955704339732.png"
+  },
+  {
+    "id": "evt_1792387619665_jb9z0",
+    "timestamp": "2026-10-19T05:26:59.017Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Pengikut (Followers))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 517,
+        "newValue": 514,
+        "diff": -3,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-10-19_05-26-59_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=58c1cc3b&x-expires=1792558800&x-signature=1ALqPj2POFUqWg8Zs2u4%2BbdZUKQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 514,
+        "followingCount": 35,
+        "heartCount": 6470,
+        "videoCount": 10,
+        "diggCount": 0,
+        "friendCount": 33
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 0,
+      "playlists": [
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-10-19T05:26:59.017Z",
+      "lastChangeAt": "2026-10-19T05:26:59.017Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-19_05-26-59_change.png"
+    }
   }
 ]
