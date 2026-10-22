@@ -6,7 +6,7 @@
     "nickname": "caca",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=2dca95a1&x-expires=1792731600&x-signature=ScoRZeH0XyXlZ7BLddqjaPGcjgE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=a453b4d0&x-expires=1792818000&x-signature=esGG208f6cZ9Ph%2FZjYL%2BnAVocG0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -22,7 +22,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-10-21T05:28:14.724Z",
+    "lastCheckedAt": "2026-10-22T05:33:25.175Z",
     "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-10-17_05-09-13_change.png",
     "lastChangeAt": "2026-10-17T05:09:13.300Z"
   },
@@ -33,29 +33,48 @@
     "nickname": "HANZZZ",
     "bio": "@americano",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=5f553927&x-expires=1792731600&x-signature=mN2TH7oCDoHV5n5jVCx4ljhSlS8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=a1feeb2b&x-expires=1792818000&x-signature=ah%2BXocwjYREluc4chGHi5GVLUnE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
-      "followerCount": 1271,
+      "followerCount": 1269,
       "followingCount": 3,
-      "heartCount": 1827,
+      "heartCount": 1831,
       "videoCount": 15,
-      "diggCount": 8030,
+      "diggCount": 8039,
       "friendCount": 3
     },
     "uniqueIdModifyTime": 0,
     "nickNameModifyTime": 1786936630,
-    "userStoryStatus": 0,
+    "userStoryStatus": 1,
     "playlists": [
       "OPINI DAN SARAN0 postingan",
       "METODE BANG RANS0 postingan",
       "PORTOFOLIO BANG RANS0 postingan"
     ],
-    "activeStories": [],
-    "lastCheckedAt": "2026-10-21T05:28:19.050Z",
-    "lastChangeAt": "2026-10-21T05:28:19.050Z",
-    "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-21_05-28-19_change.png"
+    "activeStories": [
+      {
+        "id": "7699195049665514773",
+        "desc": "",
+        "createTime": 1792608545,
+        "mediaType": "video",
+        "url": "https://www.tiktok.com/@yukohanz/video/7699195049665514773",
+        "screenshot": "screenshots/@yukohanz/stories/2026-10-22_story_7699195049665514773.png",
+        "mediaFile": "screenshots/@yukohanz/stories/2026-10-22_story_7699195049665514773_media.mp4"
+      },
+      {
+        "id": "7699259976581188885",
+        "desc": "",
+        "createTime": 1792623663,
+        "mediaType": "video",
+        "url": "https://www.tiktok.com/@yukohanz/video/7699259976581188885",
+        "screenshot": "screenshots/@yukohanz/stories/2026-10-22_story_7699259976581188885.png",
+        "mediaFile": "screenshots/@yukohanz/stories/2026-10-22_story_7699259976581188885_media.mp4"
+      }
+    ],
+    "lastCheckedAt": "2026-10-22T05:33:29.527Z",
+    "lastChangeAt": "2026-10-22T05:33:29.527Z",
+    "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-10-22_05-33-29_change.png"
   },
   "yucallhanz_": {
     "userId": "7297891277625312261",
@@ -64,7 +83,7 @@
     "nickname": "hanssOfficial",
     "bio": "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐄 📊",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7bfeb12046517849869d363797c45a65~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=45a2fc5e&x-expires=1792731600&x-signature=6uFaxYxU0jO9NzLr%2B4KHlKmQn5Q%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7bfeb12046517849869d363797c45a65~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=53f726fe&x-expires=1792818000&x-signature=E6TkYkDTFE4B%2F9EZmsN9kFcIc9A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -80,7 +99,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-10-21T05:28:24.025Z",
+    "lastCheckedAt": "2026-10-22T05:33:44.219Z",
     "lastBaselineScreenshot": "screenshots/@yucallhanz_/profile/2026-09-19_19-09-33_baseline.png"
   },
   "cecilelek2507": {
@@ -90,7 +109,7 @@
     "nickname": "yuko",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/652b37f2fbed88f79a8ec8c9ee91c071~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=b652c0e9&x-expires=1792731600&x-signature=oTUxhY%2FDLuu1UsLmlH7OKoKuxoo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/652b37f2fbed88f79a8ec8c9ee91c071~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=f945b607&x-expires=1792818000&x-signature=vFn7sfjn3HOXVmhCHrhfbqbaDCg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -106,7 +125,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-10-21T05:28:28.361Z",
+    "lastCheckedAt": "2026-10-22T05:33:48.597Z",
     "lastChangeScreenshot": "screenshots/@cecilelek2507/profile/2026-10-17_05-09-27_change.png",
     "lastChangeAt": "2026-10-17T05:09:27.160Z"
   },
@@ -117,7 +136,7 @@
     "nickname": "pepek",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=19fac337&x-expires=1792731600&x-signature=JxE65%2BBklZnOjhiBzRs6CXBhI8s%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=2dc29cf5&x-expires=1792818000&x-signature=d2YgH0OTACBPparW0Foj4bvM0TY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": true,
     "stats": {
@@ -133,7 +152,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-10-21T05:28:32.809Z",
+    "lastCheckedAt": "2026-10-22T05:33:52.969Z",
     "lastBaselineScreenshot": "screenshots/@cecil250725/profile/2026-09-19_19-09-54_baseline.png"
   },
   "saaaaa_180": {
@@ -143,14 +162,14 @@
     "nickname": "lily",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=3bf19021&x-expires=1792731600&x-signature=RQ9vvbjCDIFMoHe7rBQfSKDTlu8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=f28f8f5a&x-expires=1792818000&x-signature=daMRuKkfnp1R%2Bkw%2BLlrpzSCNL0s%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
       "followerCount": 514,
       "followingCount": 35,
-      "heartCount": 6470,
-      "videoCount": 10,
+      "heartCount": 6475,
+      "videoCount": 11,
       "diggCount": 0,
       "friendCount": 33
     },
@@ -162,8 +181,8 @@
       "PORTOFOLIO BANG RANS0 postingan"
     ],
     "activeStories": [],
-    "lastCheckedAt": "2026-10-21T05:28:37.339Z",
-    "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-19_05-26-59_change.png",
-    "lastChangeAt": "2026-10-19T05:26:59.017Z"
+    "lastCheckedAt": "2026-10-22T05:33:57.303Z",
+    "lastChangeAt": "2026-10-22T05:33:57.303Z",
+    "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-22_05-33-57_change.png"
   }
 }
