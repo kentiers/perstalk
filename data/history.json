@@ -4217,5 +4217,75 @@
       "lastChangeAt": "2026-10-22T05:33:57.303Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-22_05-33-57_change.png"
     }
+  },
+  {
+    "id": "evt_story_7699527376262270214_1792733494468",
+    "timestamp": "2026-10-23T05:31:34.468Z",
+    "username": "yukohanz",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @yukohanz",
+    "story": {
+      "id": "7699527376262270214",
+      "desc": "",
+      "createTime": 1792685920,
+      "mediaType": "video",
+      "url": "https://www.tiktok.com/@yukohanz/video/7699527376262270214",
+      "screenshot": "screenshots/@yukohanz/stories/2026-10-23_story_7699527376262270214.png",
+      "mediaFile": "screenshots/@yukohanz/stories/2026-10-23_story_7699527376262270214_media.mp4"
+    },
+    "screenshot": "screenshots/@yukohanz/stories/2026-10-23_story_7699527376262270214.png"
+  },
+  {
+    "id": "evt_1792733513982_wr95c",
+    "timestamp": "2026-10-23T05:31:53.288Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "2 perubahan terdeteksi (Jumlah Pengikut (Followers), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 514,
+        "newValue": 515,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 6475,
+        "newValue": 6478,
+        "diff": 3,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-10-23_05-31-53_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p19-common-sign.tiktokcdn.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=f67c5684&x-expires=1792904400&x-signature=%2FZfmAvTLstPavUd5qCBVi%2BzlmRU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 515,
+        "followingCount": 35,
+        "heartCount": 6478,
+        "videoCount": 11,
+        "diggCount": 0,
+        "friendCount": 32
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-10-23T05:31:53.288Z",
+      "lastChangeAt": "2026-10-23T05:31:53.288Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-23_05-31-53_change.png"
+    }
   }
 ]
