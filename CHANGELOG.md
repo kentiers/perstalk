@@ -1,21 +1,47 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **23/10/26, 05.31**
+Terakhir diperiksa: **24/10/26, 05.10**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 23/10/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 15 | 1269 | 3 | 1831 | 1 | 23/10/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 23/10/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 23/10/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 23/10/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 11 | 515 | 35 | 6478 | 0 | 23/10/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 24/10/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano" | 15 | 1269 | 4 | 1827 | 1 | 24/10/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 24/10/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 24/10/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 24/10/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 11 | 513 | 35 | 6481 | 0 | 24/10/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 24/10/26, 05.10 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "515" &rarr; "513" (-2)
+- Total Suka (Likes): "6478" &rarr; "6481" (+3)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-10-24_05-10-33_change.png`](screenshots/@saaaaa_180/profile/2026-10-24_05-10-33_change.png)
+
+---
+
+### 24/10/26, 05.10 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Mengikuti (Following): "3" &rarr; "4" (+1)
+- Total Suka (Likes): "1831" &rarr; "1827" (-4)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-10-24_05-10-11_change.png`](screenshots/@yukohanz/profile/2026-10-24_05-10-11_change.png)
+
+---
+
+### 24/10/26, 05.10 - @yukohanz (NEW_STORY)
+
+- Story: "Tanpa teks" ([Buka link](https://www.tiktok.com/@yukohanz/video/7699905168862727476))
+
+Berkas: [`screenshots/@yukohanz/stories/2026-10-24_story_7699905168862727476.png`](screenshots/@yukohanz/stories/2026-10-24_story_7699905168862727476.png)
+
+---
 
 ### 23/10/26, 05.31 - @saaaaa_180 (PROFILE_CHANGED)
 
