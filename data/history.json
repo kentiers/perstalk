@@ -5062,5 +5062,119 @@
       "lastChangeAt": "2026-10-31T06:24:58.088Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-10-31_06-24-58_change.png"
     }
+  },
+  {
+    "id": "evt_story_7702771355690732820_1793516304792",
+    "timestamp": "2026-11-01T06:58:24.792Z",
+    "username": "saaaaa_180",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @saaaaa_180",
+    "story": {
+      "id": "7702771355690732820",
+      "desc": "",
+      "createTime": 1793441219,
+      "mediaType": "photo",
+      "url": "https://www.tiktok.com/@saaaaa_180/photo/7702771355690732820",
+      "screenshot": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771355690732820.png",
+      "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771355690732820_media.jpg"
+    },
+    "screenshot": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771355690732820.png"
+  },
+  {
+    "id": "evt_story_7702771913097022740_1793516309105",
+    "timestamp": "2026-11-01T06:58:29.105Z",
+    "username": "saaaaa_180",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @saaaaa_180",
+    "story": {
+      "id": "7702771913097022740",
+      "desc": "",
+      "createTime": 1793441348,
+      "mediaType": "photo",
+      "url": "https://www.tiktok.com/@saaaaa_180/photo/7702771913097022740",
+      "screenshot": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771913097022740.png",
+      "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771913097022740_media.jpg"
+    },
+    "screenshot": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771913097022740.png"
+  },
+  {
+    "id": "evt_1793516309832_sbak4",
+    "timestamp": "2026-11-01T06:58:20.172Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "3 perubahan terdeteksi (Jumlah Pengikut (Followers), Jumlah Mengikuti (Following), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 512,
+        "newValue": 515,
+        "diff": 3,
+        "isSignificant": false
+      },
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 34,
+        "newValue": 35,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 6488,
+        "newValue": 6491,
+        "diff": 3,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-11-01_06-58-20_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=5ee001e7&x-expires=1793685600&x-signature=Mn0oFsX%2Fjb0g%2FwltNT2B5BA2kyM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my2",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 515,
+        "followingCount": 35,
+        "heartCount": 6491,
+        "videoCount": 12,
+        "diggCount": 0,
+        "friendCount": 33
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 1,
+      "playlists": [],
+      "activeStories": [
+        {
+          "id": "7702771355690732820",
+          "desc": "",
+          "createTime": 1793441219,
+          "mediaType": "photo",
+          "url": "https://www.tiktok.com/@saaaaa_180/photo/7702771355690732820",
+          "screenshot": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771355690732820.png",
+          "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771355690732820_media.jpg"
+        },
+        {
+          "id": "7702771913097022740",
+          "desc": "",
+          "createTime": 1793441348,
+          "mediaType": "photo",
+          "url": "https://www.tiktok.com/@saaaaa_180/photo/7702771913097022740",
+          "screenshot": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771913097022740.png",
+          "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-01_story_7702771913097022740_media.jpg"
+        }
+      ],
+      "lastCheckedAt": "2026-11-01T06:58:20.172Z",
+      "lastChangeAt": "2026-11-01T06:58:20.172Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-01_06-58-20_change.png"
+    }
   }
 ]
