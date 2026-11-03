@@ -5281,5 +5281,208 @@
       "lastChangeAt": "2026-11-02T06:57:53.387Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-02_06-57-53_change.png"
     }
+  },
+  {
+    "id": "evt_1793690459210_uupfe",
+    "timestamp": "2026-11-03T07:20:58.302Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "6 perubahan terdeteksi (Nama Tampilan (Nickname), Bio / Signature, Jumlah Video / Post (Postingan Dihapus (-15)), Jumlah Pengikut (Followers), Jumlah Mengikuti (Following), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "nickname",
+        "label": "Nama Tampilan (Nickname)",
+        "oldValue": "HANZZZ",
+        "newValue": "",
+        "isSignificant": true
+      },
+      {
+        "field": "bio",
+        "label": "Bio / Signature",
+        "oldValue": "@americano\nMERINTIS DARI OJOL DAN TRADING",
+        "newValue": "",
+        "isSignificant": true
+      },
+      {
+        "field": "videoCount",
+        "label": "Jumlah Video / Post (Postingan Dihapus (-15))",
+        "oldValue": 15,
+        "newValue": 0,
+        "diff": -15,
+        "isSignificant": true
+      },
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1269,
+        "newValue": 0,
+        "diff": -1269,
+        "isSignificant": false
+      },
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 6,
+        "newValue": 0,
+        "diff": -6,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1831,
+        "newValue": 0,
+        "diff": -1831,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-11-03_07-20-58_change.png",
+    "snapshot": {
+      "userId": "",
+      "secUid": "",
+      "username": "yukohanz",
+      "nickname": "",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 0,
+        "followingCount": 0,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 0
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 0,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-11-03T07:20:58.302Z",
+      "lastChangeAt": "2026-11-03T07:20:58.302Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-03_07-20-58_change.png"
+    }
+  },
+  {
+    "id": "evt_1793690470276_mzb02",
+    "timestamp": "2026-11-03T07:21:09.322Z",
+    "username": "cecilelek2507",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Nama Tampilan (Nickname))",
+    "changes": [
+      {
+        "field": "nickname",
+        "label": "Nama Tampilan (Nickname)",
+        "oldValue": "yuko",
+        "newValue": "",
+        "isSignificant": true
+      }
+    ],
+    "screenshot": "screenshots/@cecilelek2507/profile/2026-11-03_07-21-09_change.png",
+    "snapshot": {
+      "userId": "",
+      "secUid": "",
+      "username": "cecilelek2507",
+      "nickname": "",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 0,
+        "followingCount": 0,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 0
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 0,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-11-03T07:21:09.322Z",
+      "lastChangeAt": "2026-11-03T07:21:09.322Z",
+      "lastChangeScreenshot": "screenshots/@cecilelek2507/profile/2026-11-03_07-21-09_change.png"
+    }
+  },
+  {
+    "id": "evt_1793690481434_yhtr4",
+    "timestamp": "2026-11-03T07:21:20.714Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "5 perubahan terdeteksi (Nama Tampilan (Nickname), Jumlah Video / Post (Postingan Dihapus (-12)), Jumlah Pengikut (Followers), Jumlah Mengikuti (Following), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "nickname",
+        "label": "Nama Tampilan (Nickname)",
+        "oldValue": "lily",
+        "newValue": "",
+        "isSignificant": true
+      },
+      {
+        "field": "videoCount",
+        "label": "Jumlah Video / Post (Postingan Dihapus (-12))",
+        "oldValue": 12,
+        "newValue": 0,
+        "diff": -12,
+        "isSignificant": true
+      },
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 514,
+        "newValue": 0,
+        "diff": -514,
+        "isSignificant": false
+      },
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 36,
+        "newValue": 0,
+        "diff": -36,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 6491,
+        "newValue": 0,
+        "diff": -6491,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-11-03_07-21-20_change.png",
+    "snapshot": {
+      "userId": "",
+      "secUid": "",
+      "username": "saaaaa_180",
+      "nickname": "",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 0,
+        "followingCount": 0,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 0
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 0,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-11-03T07:21:20.714Z",
+      "lastChangeAt": "2026-11-03T07:21:20.714Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-03_07-21-20_change.png"
+    }
   }
 ]

@@ -1,21 +1,54 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **02/11/26, 06.57**
+Terakhir diperiksa: **03/11/26, 07.21**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 2/11/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 15 | 1269 | 6 | 1831 | 0 | 2/11/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 2/11/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 2/11/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 2/11/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 514 | 36 | 6491 | 0 | 2/11/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 3/11/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | - | "-" | 0 | 0 | 0 | 0 | 0 | 3/11/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 3/11/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | - | "-" | 0 | 0 | 0 | 0 | 0 | 3/11/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 3/11/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | - | "-" | 0 | 0 | 0 | 0 | 0 | 3/11/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 03/11/26, 07.21 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Nama Tampilan (Nickname): "lily" &rarr; ""
+- Jumlah Video / Post (Postingan Dihapus (-12)): "12" &rarr; "0" (-12)
+- Jumlah Pengikut (Followers): "514" &rarr; "0" (-514)
+- Jumlah Mengikuti (Following): "36" &rarr; "0" (-36)
+- Total Suka (Likes): "6491" &rarr; "0" (-6491)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-11-03_07-21-20_change.png`](screenshots/@saaaaa_180/profile/2026-11-03_07-21-20_change.png)
+
+---
+
+### 03/11/26, 07.21 - @cecilelek2507 (PROFILE_CHANGED)
+
+- Nama Tampilan (Nickname): "yuko" &rarr; ""
+
+Berkas: [`screenshots/@cecilelek2507/profile/2026-11-03_07-21-09_change.png`](screenshots/@cecilelek2507/profile/2026-11-03_07-21-09_change.png)
+
+---
+
+### 03/11/26, 07.20 - @yukohanz (PROFILE_CHANGED)
+
+- Nama Tampilan (Nickname): "HANZZZ" &rarr; ""
+- Bio / Signature: "@americano MERINTIS DARI OJOL DAN TRADING" &rarr; ""
+- Jumlah Video / Post (Postingan Dihapus (-15)): "15" &rarr; "0" (-15)
+- Jumlah Pengikut (Followers): "1269" &rarr; "0" (-1269)
+- Jumlah Mengikuti (Following): "6" &rarr; "0" (-6)
+- Total Suka (Likes): "1831" &rarr; "0" (-1831)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-11-03_07-20-58_change.png`](screenshots/@yukohanz/profile/2026-11-03_07-20-58_change.png)
+
+---
 
 ### 02/11/26, 06.57 - @saaaaa_180 (PROFILE_CHANGED)
 
