@@ -1,21 +1,46 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **05/11/26, 07.29**
+Terakhir diperiksa: **06/11/26, 07.37**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 5/11/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 15 | 1268 | 3 | 1827 | 0 | 5/11/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 5/11/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 5/11/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 5/11/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 514 | 36 | 6491 | 0 | 5/11/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 12 | 69 | 0 | 0 | 6/11/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 15 | 1267 | 3 | 1827 | 1 | 6/11/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 6/11/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 6/11/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 6/11/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 515 | 37 | 6491 | 0 | 6/11/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 06/11/26, 07.37 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "514" &rarr; "515" (+1)
+- Jumlah Mengikuti (Following): "36" &rarr; "37" (+1)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-11-06_07-37-45_change.png`](screenshots/@saaaaa_180/profile/2026-11-06_07-37-45_change.png)
+
+---
+
+### 06/11/26, 07.37 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1268" &rarr; "1267" (-1)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-11-06_07-37-23_change.png`](screenshots/@yukohanz/profile/2026-11-06_07-37-23_change.png)
+
+---
+
+### 06/11/26, 07.37 - @yukohanz (NEW_STORY)
+
+- Story: "#padahariini" ([Buka link](https://www.tiktok.com/@yukohanz/photo/7704647497309752596))
+
+Berkas: [`screenshots/@yukohanz/stories/2026-11-06_story_7704647497309752596.png`](screenshots/@yukohanz/stories/2026-11-06_story_7704647497309752596.png)
+
+---
 
 ### 05/11/26, 07.29 - @yukohanz (PROFILE_CHANGED)
 
