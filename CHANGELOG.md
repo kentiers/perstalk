@@ -1,21 +1,30 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **07/11/26, 06.41**
+Terakhir diperiksa: **08/11/26, 06.48**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 7/11/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 15 | 1267 | 3 | 1830 | 0 | 7/11/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 7/11/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 7/11/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 7/11/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 515 | 37 | 6491 | 0 | 7/11/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 8/11/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 15 | 1266 | 3 | 1835 | 0 | 8/11/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 8/11/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 8/11/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 8/11/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 515 | 37 | 6491 | 0 | 8/11/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 08/11/26, 06.47 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1267" &rarr; "1266" (-1)
+- Total Suka (Likes): "1830" &rarr; "1835" (+5)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-11-08_06-47-44_change.png`](screenshots/@yukohanz/profile/2026-11-08_06-47-44_change.png)
+
+---
 
 ### 07/11/26, 06.41 - @yukohanz (PROFILE_CHANGED)
 
