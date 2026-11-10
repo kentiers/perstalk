@@ -6270,5 +6270,216 @@
       "lastChangeAt": "2026-11-09T07:20:55.027Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-09_07-20-55_change.png"
     }
+  },
+  {
+    "id": "evt_story_7706173251252407604_1794297096341",
+    "timestamp": "2026-11-10T07:51:36.341Z",
+    "username": "yukohanz",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @yukohanz",
+    "story": {
+      "id": "7706173251252407604",
+      "desc": "",
+      "createTime": 1794233283,
+      "mediaType": "photo",
+      "url": "https://www.tiktok.com/@yukohanz/photo/7706173251252407604",
+      "screenshot": "screenshots/@yukohanz/stories/2026-11-10_story_7706173251252407604.png",
+      "mediaFile": "screenshots/@yukohanz/stories/2026-11-10_story_7706173251252407604_media.jpg"
+    },
+    "screenshot": "screenshots/@yukohanz/stories/2026-11-10_story_7706173251252407604.png"
+  },
+  {
+    "id": "evt_story_7706177714620976404_1794297100825",
+    "timestamp": "2026-11-10T07:51:40.825Z",
+    "username": "yukohanz",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @yukohanz",
+    "story": {
+      "id": "7706177714620976404",
+      "desc": "",
+      "createTime": 1794234322,
+      "mediaType": "video",
+      "url": "https://www.tiktok.com/@yukohanz/video/7706177714620976404",
+      "screenshot": "screenshots/@yukohanz/stories/2026-11-10_story_7706177714620976404.png",
+      "mediaFile": "screenshots/@yukohanz/stories/2026-11-10_story_7706177714620976404_media.mp4"
+    },
+    "screenshot": "screenshots/@yukohanz/stories/2026-11-10_story_7706177714620976404.png"
+  },
+  {
+    "id": "evt_1794297101484_33m38",
+    "timestamp": "2026-11-10T07:51:32.125Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Video / Post (Postingan Baru (+1)))",
+    "changes": [
+      {
+        "field": "videoCount",
+        "label": "Jumlah Video / Post (Postingan Baru (+1))",
+        "oldValue": 15,
+        "newValue": 16,
+        "diff": 1,
+        "isSignificant": true
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-11-10_07-51-32_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano\nMERINTIS DARI OJOL DAN TRADING",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=fd3800fe&x-expires=1794466800&x-signature=AVmThEKklkgYXxErLSasKV3qPCc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1267,
+        "followingCount": 3,
+        "heartCount": 1835,
+        "videoCount": 16,
+        "diggCount": 8241,
+        "friendCount": 3
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 1,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [
+        {
+          "id": "7706173251252407604",
+          "desc": "",
+          "createTime": 1794233283,
+          "mediaType": "photo",
+          "url": "https://www.tiktok.com/@yukohanz/photo/7706173251252407604",
+          "screenshot": "screenshots/@yukohanz/stories/2026-11-10_story_7706173251252407604.png",
+          "mediaFile": "screenshots/@yukohanz/stories/2026-11-10_story_7706173251252407604_media.jpg"
+        },
+        {
+          "id": "7706177714620976404",
+          "desc": "",
+          "createTime": 1794234322,
+          "mediaType": "video",
+          "url": "https://www.tiktok.com/@yukohanz/video/7706177714620976404",
+          "screenshot": "screenshots/@yukohanz/stories/2026-11-10_story_7706177714620976404.png",
+          "mediaFile": "screenshots/@yukohanz/stories/2026-11-10_story_7706177714620976404_media.mp4"
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T07:51:32.125Z",
+      "lastChangeAt": "2026-11-10T07:51:32.125Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-10_07-51-32_change.png"
+    }
+  },
+  {
+    "id": "evt_story_7706171185591029013_1794297124205",
+    "timestamp": "2026-11-10T07:52:04.205Z",
+    "username": "saaaaa_180",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @saaaaa_180",
+    "story": {
+      "id": "7706171185591029013",
+      "desc": "",
+      "createTime": 1794232801,
+      "mediaType": "photo",
+      "url": "https://www.tiktok.com/@saaaaa_180/photo/7706171185591029013",
+      "screenshot": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171185591029013.png",
+      "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171185591029013_media.jpg"
+    },
+    "screenshot": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171185591029013.png"
+  },
+  {
+    "id": "evt_story_7706171467695803668_1794297128496",
+    "timestamp": "2026-11-10T07:52:08.496Z",
+    "username": "saaaaa_180",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @saaaaa_180",
+    "story": {
+      "id": "7706171467695803668",
+      "desc": "",
+      "createTime": 1794232869,
+      "mediaType": "photo",
+      "url": "https://www.tiktok.com/@saaaaa_180/photo/7706171467695803668",
+      "screenshot": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171467695803668.png",
+      "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171467695803668_media.jpg"
+    },
+    "screenshot": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171467695803668.png"
+  },
+  {
+    "id": "evt_1794297129144_999tq",
+    "timestamp": "2026-11-10T07:52:00.150Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "2 perubahan terdeteksi (Jumlah Pengikut (Followers), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 515,
+        "newValue": 516,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 6492,
+        "newValue": 6493,
+        "diff": 1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-11-10_07-52-00_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=ea2fbd2b&x-expires=1794466800&x-signature=RJ3C7ZD%2FBqnJURHJbX4iwBn3imk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 516,
+        "followingCount": 37,
+        "heartCount": 6493,
+        "videoCount": 11,
+        "diggCount": 0,
+        "friendCount": 35
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 1,
+      "playlists": [
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [
+        {
+          "id": "7706171185591029013",
+          "desc": "",
+          "createTime": 1794232801,
+          "mediaType": "photo",
+          "url": "https://www.tiktok.com/@saaaaa_180/photo/7706171185591029013",
+          "screenshot": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171185591029013.png",
+          "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171185591029013_media.jpg"
+        },
+        {
+          "id": "7706171467695803668",
+          "desc": "",
+          "createTime": 1794232869,
+          "mediaType": "photo",
+          "url": "https://www.tiktok.com/@saaaaa_180/photo/7706171467695803668",
+          "screenshot": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171467695803668.png",
+          "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-10_story_7706171467695803668_media.jpg"
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T07:52:00.150Z",
+      "lastChangeAt": "2026-11-10T07:52:00.150Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-10_07-52-00_change.png"
+    }
   }
 ]
