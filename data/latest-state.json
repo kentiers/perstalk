@@ -6,7 +6,7 @@
     "nickname": "caca",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=f29cf4d1&x-expires=1794898800&x-signature=75JhU1eBA%2B8HIQOafs7bVTqty0g%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=8ab294df&x-expires=1794985200&x-signature=RQCfldctFwAUigAjvam7pWXomdE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -22,7 +22,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-11-15T07:19:00.707Z",
+    "lastCheckedAt": "2026-11-16T07:26:19.920Z",
     "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-11-07_06-41-13_change.png",
     "lastChangeAt": "2026-11-07T06:41:13.095Z"
   },
@@ -33,29 +33,57 @@
     "nickname": "HANZZZ",
     "bio": "@americano\nMERINTIS DARI OJOL DAN TRADING",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4230c7d2&x-expires=1794898800&x-signature=s0d4j1QQayDQ2qtvv8Egr11%2BHeQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=884a6024&x-expires=1794985200&x-signature=ALnY%2ByS9thaH4QTOjdwkdNKgM14%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
-      "followerCount": 1267,
+      "followerCount": 1266,
       "followingCount": 3,
-      "heartCount": 1832,
+      "heartCount": 1836,
       "videoCount": 16,
-      "diggCount": 8255,
+      "diggCount": 8256,
       "friendCount": 3
     },
     "uniqueIdModifyTime": 0,
     "nickNameModifyTime": 1786936630,
-    "userStoryStatus": 0,
+    "userStoryStatus": 1,
     "playlists": [
       "OPINI DAN SARAN0 postingan",
       "METODE BANG RANS0 postingan",
       "PORTOFOLIO BANG RANS0 postingan"
     ],
-    "activeStories": [],
-    "lastCheckedAt": "2026-11-15T07:19:04.998Z",
-    "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-14_07-08-01_change.png",
-    "lastChangeAt": "2026-11-14T07:08:01.697Z"
+    "activeStories": [
+      {
+        "id": "7708327207076121876",
+        "desc": "",
+        "createTime": 1794734793,
+        "mediaType": "photo",
+        "url": "https://www.tiktok.com/@yukohanz/photo/7708327207076121876",
+        "screenshot": "screenshots/@yukohanz/stories/2026-11-16_story_7708327207076121876.png",
+        "mediaFile": "screenshots/@yukohanz/stories/2026-11-16_story_7708327207076121876_media.jpg"
+      },
+      {
+        "id": "7708327450748538133",
+        "desc": "",
+        "createTime": 1794734848,
+        "mediaType": "photo",
+        "url": "https://www.tiktok.com/@yukohanz/photo/7708327450748538133",
+        "screenshot": "screenshots/@yukohanz/stories/2026-11-16_story_7708327450748538133.png",
+        "mediaFile": "screenshots/@yukohanz/stories/2026-11-16_story_7708327450748538133_media.jpg"
+      },
+      {
+        "id": "7708331782613028116",
+        "desc": "",
+        "createTime": 1794735862,
+        "mediaType": "video",
+        "url": "https://www.tiktok.com/@yukohanz/video/7708331782613028116",
+        "screenshot": "screenshots/@yukohanz/stories/2026-11-16_story_7708331782613028116.png",
+        "mediaFile": "screenshots/@yukohanz/stories/2026-11-16_story_7708331782613028116_media.mp4"
+      }
+    ],
+    "lastCheckedAt": "2026-11-16T07:26:24.977Z",
+    "lastChangeAt": "2026-11-16T07:26:24.977Z",
+    "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-16_07-26-24_change.png"
   },
   "yucallhanz_": {
     "userId": "7297891277625312261",
@@ -64,7 +92,7 @@
     "nickname": "hanssOfficial",
     "bio": "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐄 📊",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7bfeb12046517849869d363797c45a65~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=24d130f8&x-expires=1794898800&x-signature=pvJbZD1YmXhWpHfW7MZhIK1mybk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7bfeb12046517849869d363797c45a65~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=b7183900&x-expires=1794985200&x-signature=oYL5Ewh34lencEJpXtirLCbJX5k%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -80,7 +108,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-11-15T07:19:09.288Z",
+    "lastCheckedAt": "2026-11-16T07:26:42.319Z",
     "lastBaselineScreenshot": "screenshots/@yucallhanz_/profile/2026-09-19_19-09-33_baseline.png"
   },
   "cecilelek2507": {
@@ -90,7 +118,7 @@
     "nickname": "yuko",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/652b37f2fbed88f79a8ec8c9ee91c071~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=a3a9278c&x-expires=1794898800&x-signature=Rs%2FgCiWoEMx9pv5dRM%2BTZn1HSSY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/652b37f2fbed88f79a8ec8c9ee91c071~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4e6fc072&x-expires=1794985200&x-signature=Kx71Av64OTHoRtL1dWav4LG%2FleM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -106,7 +134,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-11-15T07:19:13.608Z",
+    "lastCheckedAt": "2026-11-16T07:26:47.394Z",
     "lastChangeScreenshot": "screenshots/@cecilelek2507/profile/2026-11-04_07-02-48_change.png",
     "lastChangeAt": "2026-11-04T07:02:48.767Z"
   },
@@ -117,7 +145,7 @@
     "nickname": "pepek",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=6a89e7ce&x-expires=1794898800&x-signature=jSmzUIfO2Q4hQueQzTRhA%2FTRikQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=fc1f73e0&x-expires=1794985200&x-signature=rsQoek4PhBJRJfgnjO%2BFXGaqUZw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": true,
     "stats": {
@@ -133,7 +161,7 @@
     "userStoryStatus": 0,
     "playlists": [],
     "activeStories": [],
-    "lastCheckedAt": "2026-11-15T07:19:17.880Z",
+    "lastCheckedAt": "2026-11-16T07:26:51.736Z",
     "lastBaselineScreenshot": "screenshots/@cecil250725/profile/2026-09-19_19-09-54_baseline.png"
   },
   "saaaaa_180": {
@@ -143,7 +171,7 @@
     "nickname": "lily",
     "bio": "",
     "bioLink": "",
-    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=c0ca199f&x-expires=1794898800&x-signature=NWjrzK9FpoPf6yUFTywTi2ArXIU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=4aadf74d&x-expires=1794985200&x-signature=AXBzPCdpCqnY36ScwP9eN3qh4dc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
     "isVerified": false,
     "isPrivate": false,
     "stats": {
@@ -156,13 +184,23 @@
     },
     "uniqueIdModifyTime": 0,
     "nickNameModifyTime": 1789675824,
-    "userStoryStatus": 0,
+    "userStoryStatus": 1,
     "playlists": [
       "METODE BANG RANS0 postingan",
       "PORTOFOLIO BANG RANS0 postingan"
     ],
-    "activeStories": [],
-    "lastCheckedAt": "2026-11-15T07:19:22.245Z",
+    "activeStories": [
+      {
+        "id": "7708325362366827796",
+        "desc": "",
+        "createTime": 1794734360,
+        "mediaType": "video",
+        "url": "https://www.tiktok.com/@saaaaa_180/video/7708325362366827796",
+        "screenshot": "screenshots/@saaaaa_180/stories/2026-11-16_story_7708325362366827796.png",
+        "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-16_story_7708325362366827796_media.mp4"
+      }
+    ],
+    "lastCheckedAt": "2026-11-16T07:26:56.207Z",
     "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-11_07-19-49_change.png",
     "lastChangeAt": "2026-11-11T07:19:49.903Z"
   }
