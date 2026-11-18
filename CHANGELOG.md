@@ -1,21 +1,37 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **17/11/26, 08.38**
+Terakhir diperiksa: **18/11/26, 08.01**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 17/11/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 16 | 1266 | 3 | 1832 | 0 | 17/11/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 2 | 2229 | 0 | 17/11/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 17/11/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 17/11/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 11 | 516 | 37 | 6493 | 0 | 17/11/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 69 | 0 | 0 | 18/11/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 16 | 1266 | 3 | 1836 | 0 | 18/11/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 78 | 3 | 2229 | 0 | 18/11/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 18/11/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 18/11/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 11 | 516 | 37 | 6493 | 0 | 18/11/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 18/11/26, 08.01 - @yucallhanz_ (PROFILE_CHANGED)
+
+- Jumlah Mengikuti (Following): "2" &rarr; "3" (+1)
+
+Berkas: [`screenshots/@yucallhanz_/profile/2026-11-18_08-01-01_change.png`](screenshots/@yucallhanz_/profile/2026-11-18_08-01-01_change.png)
+
+---
+
+### 18/11/26, 08.00 - @yukohanz (PROFILE_CHANGED)
+
+- Total Suka (Likes): "1832" &rarr; "1836" (+4)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-11-18_08-00-55_change.png`](screenshots/@yukohanz/profile/2026-11-18_08-00-55_change.png)
+
+---
 
 ### 17/11/26, 08.38 - @saaaaa_180 (PROFILE_CHANGED)
 
