@@ -7241,5 +7241,152 @@
       "lastChangeAt": "2026-11-20T07:52:22.852Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-20_07-52-22_change.png"
     }
+  },
+  {
+    "id": "evt_1795247286870_53kfz",
+    "timestamp": "2026-11-21T07:48:06.223Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "3 perubahan terdeteksi (Foto Profil (Avatar), Jumlah Pengikut (Followers), Jumlah Mengikuti (Following))",
+    "changes": [
+      {
+        "field": "avatarUrl",
+        "label": "Foto Profil (Avatar)",
+        "oldValue": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/917f02a0d5c2b29a148a07c3ecd2ee64~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=dcf6b263&x-expires=1795330800&x-signature=HKR0IJxZ5dA9GAHSBo0sVi6ixkk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+        "newValue": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/81e60a1c2bf3e31527d8bf49fb770bf0~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=0cac3bfc&x-expires=1795417200&x-signature=wXjngwY%2B5lg2xUlK%2BtPE4vnZ%2Fe0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+        "isSignificant": true
+      },
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1264,
+        "newValue": 1265,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 3,
+        "newValue": 4,
+        "diff": 1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-11-21_07-48-06_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano\nMERINTIS DARI OJOL DAN TRADING",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/81e60a1c2bf3e31527d8bf49fb770bf0~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=0cac3bfc&x-expires=1795417200&x-signature=wXjngwY%2B5lg2xUlK%2BtPE4vnZ%2Fe0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1265,
+        "followingCount": 4,
+        "heartCount": 1836,
+        "videoCount": 16,
+        "diggCount": 8273,
+        "friendCount": 4
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-11-21T07:48:06.223Z",
+      "lastChangeAt": "2026-11-21T07:48:06.223Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-21_07-48-06_change.png"
+    }
+  },
+  {
+    "id": "evt_story_7710215647640210709_1795247310273",
+    "timestamp": "2026-11-21T07:48:30.273Z",
+    "username": "saaaaa_180",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @saaaaa_180",
+    "story": {
+      "id": "7710215647640210709",
+      "desc": "",
+      "createTime": 1795174475,
+      "mediaType": "video",
+      "url": "https://www.tiktok.com/@saaaaa_180/video/7710215647640210709",
+      "screenshot": "screenshots/@saaaaa_180/stories/2026-11-21_story_7710215647640210709.png",
+      "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-21_story_7710215647640210709_media.mp4"
+    },
+    "screenshot": "screenshots/@saaaaa_180/stories/2026-11-21_story_7710215647640210709.png"
+  },
+  {
+    "id": "evt_1795247310919_ig80p",
+    "timestamp": "2026-11-21T07:48:25.290Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "2 perubahan terdeteksi (Jumlah Pengikut (Followers), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 516,
+        "newValue": 517,
+        "diff": 1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 6501,
+        "newValue": 6502,
+        "diff": 1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-11-21_07-48-25_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=94a45947&x-expires=1795417200&x-signature=I%2FDOiE16VF0%2FracBKjxQnyWsyjs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 517,
+        "followingCount": 37,
+        "heartCount": 6502,
+        "videoCount": 12,
+        "diggCount": 0,
+        "friendCount": 35
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 1,
+      "playlists": [
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [
+        {
+          "id": "7710215647640210709",
+          "desc": "",
+          "createTime": 1795174475,
+          "mediaType": "video",
+          "url": "https://www.tiktok.com/@saaaaa_180/video/7710215647640210709",
+          "screenshot": "screenshots/@saaaaa_180/stories/2026-11-21_story_7710215647640210709.png",
+          "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-21_story_7710215647640210709_media.mp4"
+        }
+      ],
+      "lastCheckedAt": "2026-11-21T07:48:25.290Z",
+      "lastChangeAt": "2026-11-21T07:48:25.290Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-21_07-48-25_change.png"
+    }
   }
 ]
