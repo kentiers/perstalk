@@ -7437,5 +7437,183 @@
       "lastChangeAt": "2026-11-22T07:35:54.531Z",
       "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-22_07-35-54_change.png"
     }
+  },
+  {
+    "id": "evt_1795422176330_p40pd",
+    "timestamp": "2026-11-23T08:22:55.672Z",
+    "username": "cecil2507",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Jumlah Mengikuti (Following))",
+    "changes": [
+      {
+        "field": "followingCount",
+        "label": "Jumlah Mengikuti (Following)",
+        "oldValue": 69,
+        "newValue": 68,
+        "diff": -1,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@cecil2507/profile/2026-11-23_08-22-55_change.png",
+    "snapshot": {
+      "userId": "7686209623263429653",
+      "secUid": "MS4wLjABAAAA9CJz5qbn2y_YuUg3v8G5ev5Nz6QKbMIDm1V-YfytzvGd00ubZgq2cbgsjGjT4ykr",
+      "username": "cecil2507",
+      "nickname": "caca",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/3e57c21314671f8025509afd2211bbc7~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=823a3759&x-expires=1795593600&x-signature=eQ56dUDYNgOGrKf9Rh2Yi6bNLCM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 10,
+        "followingCount": 68,
+        "heartCount": 0,
+        "videoCount": 0,
+        "diggCount": 0,
+        "friendCount": 10
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789585172,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-11-23T08:22:55.672Z",
+      "lastChangeAt": "2026-11-23T08:22:55.672Z",
+      "lastChangeScreenshot": "screenshots/@cecil2507/profile/2026-11-23_08-22-55_change.png"
+    }
+  },
+  {
+    "id": "evt_1795422181395_7hryv",
+    "timestamp": "2026-11-23T08:23:00.749Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "3 perubahan terdeteksi (Jumlah Video / Post (Postingan Dihapus (-2)), Jumlah Pengikut (Followers), Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "videoCount",
+        "label": "Jumlah Video / Post (Postingan Dihapus (-2))",
+        "oldValue": 16,
+        "newValue": 14,
+        "diff": -2,
+        "isSignificant": true
+      },
+      {
+        "field": "followerCount",
+        "label": "Jumlah Pengikut (Followers)",
+        "oldValue": 1264,
+        "newValue": 1263,
+        "diff": -1,
+        "isSignificant": false
+      },
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1836,
+        "newValue": 1832,
+        "diff": -4,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-11-23_08-23-00_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano\nMERINTIS DARI OJOL DAN TRADING",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/81e60a1c2bf3e31527d8bf49fb770bf0~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=bfd19787&x-expires=1795593600&x-signature=SNaEZr%2BPEAI6QYg5x12t9jwBdoE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1263,
+        "followingCount": 4,
+        "heartCount": 1832,
+        "videoCount": 14,
+        "diggCount": 8283,
+        "friendCount": 4
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [],
+      "activeStories": [],
+      "lastCheckedAt": "2026-11-23T08:23:00.749Z",
+      "lastChangeAt": "2026-11-23T08:23:00.749Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-23_08-23-00_change.png"
+    }
+  },
+  {
+    "id": "evt_story_7711201155618999573_1795422203498",
+    "timestamp": "2026-11-23T08:23:23.498Z",
+    "username": "saaaaa_180",
+    "eventType": "NEW_STORY",
+    "summary": "Story baru diunggah oleh @saaaaa_180",
+    "story": {
+      "id": "7711201155618999573",
+      "desc": "",
+      "createTime": 1795403938,
+      "mediaType": "video",
+      "url": "https://www.tiktok.com/@saaaaa_180/video/7711201155618999573",
+      "screenshot": "screenshots/@saaaaa_180/stories/2026-11-23_story_7711201155618999573.png",
+      "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-23_story_7711201155618999573_media.mp4"
+    },
+    "screenshot": "screenshots/@saaaaa_180/stories/2026-11-23_story_7711201155618999573.png"
+  },
+  {
+    "id": "evt_1795422204131_jhyha",
+    "timestamp": "2026-11-23T08:23:18.955Z",
+    "username": "saaaaa_180",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 6502,
+        "newValue": 6504,
+        "diff": 2,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@saaaaa_180/profile/2026-11-23_08-23-18_change.png",
+    "snapshot": {
+      "userId": "7267522133126169605",
+      "secUid": "MS4wLjABAAAAAVHSh24Exf93ReraD60M-soSZ-QsDPuq1hAm9u4qXWxUab69ylZRfnLqb-rmvLeF",
+      "username": "saaaaa_180",
+      "nickname": "lily",
+      "bio": "",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/879a86a4b9f32bab521b03bfeff96b36~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=b0d6945c&x-expires=1795593600&x-signature=y9A1EVyqCanV72xlzz3fwNwkhZM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 517,
+        "followingCount": 37,
+        "heartCount": 6504,
+        "videoCount": 12,
+        "diggCount": 0,
+        "friendCount": 35
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1789675824,
+      "userStoryStatus": 1,
+      "playlists": [],
+      "activeStories": [
+        {
+          "id": "7711201155618999573",
+          "desc": "",
+          "createTime": 1795403938,
+          "mediaType": "video",
+          "url": "https://www.tiktok.com/@saaaaa_180/video/7711201155618999573",
+          "screenshot": "screenshots/@saaaaa_180/stories/2026-11-23_story_7711201155618999573.png",
+          "mediaFile": "screenshots/@saaaaa_180/stories/2026-11-23_story_7711201155618999573_media.mp4"
+        }
+      ],
+      "lastCheckedAt": "2026-11-23T08:23:18.955Z",
+      "lastChangeAt": "2026-11-23T08:23:18.955Z",
+      "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-23_08-23-18_change.png"
+    }
   }
 ]
