@@ -1,21 +1,30 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **23/11/26, 08.23**
+Terakhir diperiksa: **24/11/26, 10.31**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 10 | 68 | 0 | 0 | 23/11/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 14 | 1263 | 4 | 1832 | 0 | 23/11/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 77 | 3 | 2229 | 0 | 23/11/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 23/11/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 23/11/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 517 | 37 | 6504 | 1 | 23/11/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 10 | 68 | 0 | 0 | 24/11/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 14 | 1263 | 4 | 1832 | 0 | 24/11/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 77 | 3 | 2229 | 0 | 24/11/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 24/11/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 24/11/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 516 | 37 | 6505 | 0 | 24/11/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 24/11/26, 10.31 - @saaaaa_180 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "517" &rarr; "516" (-1)
+- Total Suka (Likes): "6504" &rarr; "6505" (+1)
+
+Berkas: [`screenshots/@saaaaa_180/profile/2026-11-24_10-31-20_change.png`](screenshots/@saaaaa_180/profile/2026-11-24_10-31-20_change.png)
+
+---
 
 ### 23/11/26, 08.23 - @saaaaa_180 (PROFILE_CHANGED)
 
