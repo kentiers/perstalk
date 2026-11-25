@@ -7671,5 +7671,54 @@
       "lastChangeAt": "2026-11-24T10:31:20.102Z",
       "lastChangeScreenshot": "screenshots/@saaaaa_180/profile/2026-11-24_10-31-20_change.png"
     }
+  },
+  {
+    "id": "evt_1795598434879_wxism",
+    "timestamp": "2026-11-25T09:20:34.234Z",
+    "username": "yukohanz",
+    "eventType": "PROFILE_CHANGED",
+    "summary": "1 perubahan terdeteksi (Total Suka (Likes))",
+    "changes": [
+      {
+        "field": "heartCount",
+        "label": "Total Suka (Likes)",
+        "oldValue": 1832,
+        "newValue": 1838,
+        "diff": 6,
+        "isSignificant": false
+      }
+    ],
+    "screenshot": "screenshots/@yukohanz/profile/2026-11-25_09-20-34_change.png",
+    "snapshot": {
+      "userId": "7086484683966153755",
+      "secUid": "MS4wLjABAAAA8hojck-F9cvk28bu7V4DH4vVhNJwsRKvjRrEbgroyTafYc1zzyuZsLyTDS8zfgFv",
+      "username": "yukohanz",
+      "nickname": "HANZZZ",
+      "bio": "@americano\nMERINTIS DARI OJOL DAN TRADING",
+      "bioLink": "",
+      "avatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/81e60a1c2bf3e31527d8bf49fb770bf0~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=7fc5252b&x-expires=1795770000&x-signature=QyGSmUMd04bbKuANSF4ykO%2FlT2Y%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+      "isVerified": false,
+      "isPrivate": false,
+      "stats": {
+        "followerCount": 1263,
+        "followingCount": 4,
+        "heartCount": 1838,
+        "videoCount": 14,
+        "diggCount": 8301,
+        "friendCount": 4
+      },
+      "uniqueIdModifyTime": 0,
+      "nickNameModifyTime": 1786936630,
+      "userStoryStatus": 0,
+      "playlists": [
+        "OPINI DAN SARAN0 postingan",
+        "METODE BANG RANS0 postingan",
+        "PORTOFOLIO BANG RANS0 postingan"
+      ],
+      "activeStories": [],
+      "lastCheckedAt": "2026-11-25T09:20:34.234Z",
+      "lastChangeAt": "2026-11-25T09:20:34.234Z",
+      "lastChangeScreenshot": "screenshots/@yukohanz/profile/2026-11-25_09-20-34_change.png"
+    }
   }
 ]
