@@ -1,21 +1,46 @@
 # Log Riwayat Perubahan
 
-Terakhir diperiksa: **25/11/26, 09.20**
+Terakhir diperiksa: **26/11/26, 09.00**
 
 ## Ringkasan Akun (6 Target)
 
 | Akun | Nama | Bio | Video | Pengikut | Mengikuti | Suka | Story | Tanggal Dicek |
 |---|---|---|---|---|---|---|---|---|
-| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 10 | 68 | 0 | 0 | 25/11/2026 |
-| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 14 | 1263 | 4 | 1838 | 0 | 25/11/2026 |
-| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 77 | 3 | 2229 | 0 | 25/11/2026 |
-| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 25/11/2026 |
-| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 25/11/2026 |
-| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 516 | 37 | 6505 | 0 | 25/11/2026 |
+| **[@cecil2507](https://www.tiktok.com/@cecil2507)** | caca | "-" | 0 | 11 | 68 | 0 | 0 | 26/11/2026 |
+| **[@yukohanz](https://www.tiktok.com/@yukohanz)** | HANZZZ | "@americano MERINTIS DARI OJOL DA" | 14 | 1262 | 4 | 1834 | 0 | 26/11/2026 |
+| **[@yucallhanz_](https://www.tiktok.com/@yucallhanz_)** | hanssOfficial | "📊 𝐍𝐎 𝐑𝐈𝐒𝐊 𝐍𝐎 𝐑𝐈𝐂𝐇, " | 52 | 77 | 3 | 2229 | 0 | 26/11/2026 |
+| **[@cecilelek2507](https://www.tiktok.com/@cecilelek2507)** | yuko | "-" | 0 | 0 | 0 | 0 | 0 | 26/11/2026 |
+| **[@cecil250725](https://www.tiktok.com/@cecil250725)** | pepek | "-" | 0 | 0 | 1 | 0 | 0 | 26/11/2026 |
+| **[@saaaaa_180](https://www.tiktok.com/@saaaaa_180)** | lily | "-" | 12 | 516 | 37 | 6505 | 1 | 26/11/2026 |
 
 ---
 
 ## Riwayat Kejadian
+
+### 26/11/26, 09.00 - @saaaaa_180 (NEW_STORY)
+
+- Story: "Tanpa teks" ([Buka link](https://www.tiktok.com/@saaaaa_180/video/7712055289742232884))
+
+Berkas: [`screenshots/@saaaaa_180/stories/2026-11-26_story_7712055289742232884.png`](screenshots/@saaaaa_180/stories/2026-11-26_story_7712055289742232884.png)
+
+---
+
+### 26/11/26, 09.00 - @yukohanz (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "1263" &rarr; "1262" (-1)
+- Total Suka (Likes): "1838" &rarr; "1834" (-4)
+
+Berkas: [`screenshots/@yukohanz/profile/2026-11-26_09-00-13_change.png`](screenshots/@yukohanz/profile/2026-11-26_09-00-13_change.png)
+
+---
+
+### 26/11/26, 09.00 - @cecil2507 (PROFILE_CHANGED)
+
+- Jumlah Pengikut (Followers): "10" &rarr; "11" (+1)
+
+Berkas: [`screenshots/@cecil2507/profile/2026-11-26_09-00-08_change.png`](screenshots/@cecil2507/profile/2026-11-26_09-00-08_change.png)
+
+---
 
 ### 25/11/26, 09.20 - @yukohanz (PROFILE_CHANGED)
 
